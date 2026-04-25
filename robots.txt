@@ -1,0 +1,121 @@
+# =============================================
+# robots.txt — nordicdigitalthailand.com
+# Last updated: April 2026
+# =============================================
+
+# Default: disallow all crawlers
+User-agent: *
+DisDisallow: /
+
+# Sitemap
+Sitemap: https://nordicdigitalthailand.com/sitemap.xml
+
+# --- OpenAI ---
+
+# Training crawler
+User-agent: GPTBot
+Disallow: /
+
+# ChatGPT search results
+User-agent: OAI-SearchBot
+Disallow: /
+
+# User-initiated browsing in ChatGPT
+User-agent: ChatGPT-User
+Disallow: /
+
+
+# --- Anthropic (Claude) ---
+
+# Training crawler
+User-agent: ClaudeBot
+Disallow: /
+
+# Search and retrieval
+User-agent: Claude-SearchBot
+Disallow: /
+
+# User-initiated fetching
+User-agent: Claude-User
+Disallow: /
+
+# Legacy (deprecated but still seen in logs)
+User-agent: anthropic-ai
+Disallow: /
+
+
+# --- Google AI ---
+
+# AI training opt-in
+User-agent: Google-Extended
+Disallow: /
+
+# Vertex AI
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+
+# --- Perplexity ---
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+
+# --- Apple ---
+
+# Apple AI training
+User-agent: Applebot-Extended
+Disallow: /
+
+
+# --- Meta ---
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+
+# --- Amazon ---
+
+User-agent: Amazonbot
+Disallow: /
+
+
+# --- Common Crawl ---
+
+User-agent: CCBot
+Disallow: /
+
+
+# --- Microsoft ---
+
+User-agent: bingbot
+Disallow: /
+
+
+# --- Others ---
+
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: MistralAI-User
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: PhindBot
+Disallow: /
+
+User-agent: ExaBot
+Disallow: /
+
+Sitemap: https://www.nordicdigitalthailand.com/sitemap.xml

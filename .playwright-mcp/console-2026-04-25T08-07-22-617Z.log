@@ -1,0 +1,36 @@
+[    9863ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/g0lnomhfn3mgNjc1MDE0MTk3MGUwMWFmODVjOWRkMGFi/ytB4HJ09T-dWp76TUKFQlXqn3dY:0
+[   10477ms] ReferenceError: $ is not defined
+    at http://localhost:8000/case-study/tobiko.html:565:1
+[   10695ms] ReferenceError: $ is not defined
+    at HTMLDocument.<anonymous> (http://localhost:8000/case-study/tobiko.html:513:7)
+[   11152ms] ReferenceError: gsap is not defined
+    at http://localhost:8000/case-study/tobiko.html:580:7
+    at Array.forEach (<anonymous>)
+    at window.onload (http://localhost:8000/case-study/tobiko.html:579:11)
+[   30145ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/g0lnomhfn3mgNjc1MDE0MTk3MGUwMWFmODVjOWRkMGFi/ytB4HJ09T-dWp76TUKFQlXqn3dY:0
+[   30158ms] ReferenceError: $ is not defined
+    at http://localhost:8000/case-study/tobiko.html:565:1
+[   30165ms] ReferenceError: $ is not defined
+    at HTMLDocument.<anonymous> (http://localhost:8000/case-study/tobiko.html:513:7)
+[   30442ms] ReferenceError: gsap is not defined
+    at http://localhost:8000/case-study/tobiko.html:580:7
+    at Array.forEach (<anonymous>)
+    at window.onload (http://localhost:8000/case-study/tobiko.html:579:11)
+[   35428ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/g0lnomhfn3mgNjc1MDE0MTk3MGUwMWFmODVjOWRkMGFi/ytB4HJ09T-dWp76TUKFQlXqn3dY:0
+[   35446ms] ReferenceError: $ is not defined
+    at http://localhost:8000/case-study/tobiko.html:565:1
+[   35452ms] ReferenceError: $ is not defined
+    at HTMLDocument.<anonymous> (http://localhost:8000/case-study/tobiko.html:513:7)
+[   35727ms] ReferenceError: gsap is not defined
+    at http://localhost:8000/case-study/tobiko.html:580:7
+    at Array.forEach (<anonymous>)
+    at window.onload (http://localhost:8000/case-study/tobiko.html:579:11)
+[   42386ms] ReferenceError: $ is not defined
+    at http://localhost:8000/case-study/tobiko.html:565:1
+[   42387ms] ReferenceError: $ is not defined
+    at HTMLDocument.<anonymous> (http://localhost:8000/case-study/tobiko.html:513:7)
+[   42377ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/g0lnomhfn3mgNjc1MDE0MTk3MGUwMWFmODVjOWRkMGFi/ytB4HJ09T-dWp76TUKFQlXqn3dY:0
+[   42663ms] ReferenceError: gsap is not defined
+    at http://localhost:8000/case-study/tobiko.html:580:7
+    at Array.forEach (<anonymous>)
+    at window.onload (http://localhost:8000/case-study/tobiko.html:579:11)
