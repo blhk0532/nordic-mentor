@@ -4675,8 +4675,98 @@
               .footer-logo {
                 bottom: 2rem;
               }
-              .footer-link{
-                padding:5px;
+
+              .footer-link {
+                padding: 5px;
+              }
+
+              .footer-buttons {
+                margin: 0 !important;
+              }
+
+              .footer-flex {
+                justify-self: unset;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: nowrap;
+              }
+
+              .footer-flex-item.footer-flags {
+                gap: 10px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                width: auto;
+                max-width: none;
+                white-space: nowrap;
+                flex: 0 0 auto;
+              }
+
+              .footer-flex-item.footer-flags .footer-btn-flag {
+                flex: 0 0 36px;
+              }
+
+              @media (min-width: 992px) {
+                .footer-flex {
+                  flex-wrap: nowrap !important;
+                }
+
+                .footer-flex-item.footer-logo-btn {
+                  order: 1;
+                }
+
+                .footer-flex > .footer-btn-link {
+                  order: 2;
+                }
+
+                .footer-flex-item.footer-flags {
+                  order: 3;
+                }
+              }
+
+              @media (max-width: 991px) {
+                .footer-links {
+                  width: 100% !important;
+                  max-width: 100%;
+                  padding: 1rem 0 !important;
+                }
+
+                .footer-flex {
+                  flex-wrap: wrap !important;
+                  row-gap: 10px;
+                }
+
+                .footer-flex > .footer-btn-link {
+                  order: 1;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                }
+
+                .footer-flex-item.footer-flags {
+                  order: 2;
+                  width: 100%;
+                  justify-content: center;
+                  overflow-x: auto;
+                  overflow-y: hidden;
+                  -webkit-overflow-scrolling: touch;
+                  scrollbar-width: none;
+                  padding-bottom: 2px;
+                }
+
+                .footer-flex-item.footer-flags::-webkit-scrollbar {
+                  display: none;
+                }
+
+                .footer-flex-item.footer-logo-btn {
+                  order: 3;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                }
               }
             </style>
           </div>
@@ -4715,7 +4805,7 @@
           <div
             id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374"
             class="footer-links"
-            style="padding: 2rem; width: 100%; margin-left: 0px; width:555px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"
+            style="padding: 2rem; width: 100%; margin-left: 0px; max-width: 555px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"
           >
             <a style="margin:5px;" href="#main" aria-current="page"  class="footer-link  w--current">HOME</a>
             <a style="margin:5px;" href="about.html" class="footer-link">ABOUT</a>
@@ -4724,8 +4814,8 @@
             <a style="margin:5px;" href="contact.html" class="footer-link">CONTACT</a>
           </div>
           <div style="margin: 0px" id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374" class="footer-buttons">
-            <div class="footer-flex" style="justify-self: unset; display:flex; width:100%; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div class="footer-flex-item">
+            <div class="footer-flex" style="justify-self: unset; display: flex; width: 100%; justify-content: center; gap: 10px;">
+              <div class="footer-flex-item footer-logo-btn">
                 <a
                   id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
                   href="index.html"
@@ -4768,10 +4858,9 @@
                     class="logo-mentor"
                   />
                 </a>
-              </div>
               <div
                 class="footer-flex-item footer-flags"
-                style="gap: 10px; display: flex; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 600px;"
+                style="gap: 10px; display: flex; flex-wrap: nowrap; justify-content: center;"
               >
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
