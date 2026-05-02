@@ -2506,18 +2506,20 @@ blockquote  {
   display: flex;
   position: relative;
   overflow: clip;
+  padding: 2rem 1rem;
 }
 
 .footer-grid  {
-  gap: 0rem;
+  gap: 1rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: flex-start;
   place-items: center stretch;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
+  width: 100%;
 }
 
 .footer-copy  {
@@ -2528,6 +2530,7 @@ blockquote  {
   font-size: 1.25em;
   font-weight: 500;
   line-height: 1.25;
+  word-wrap: break-word;
 }
 
 .footer-links  {
@@ -2535,11 +2538,13 @@ blockquote  {
   flex: 1 1 0%;
   justify-content: space-between;
   align-items: center;
-  margin-left: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  font-size: 1.2em;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   position: relative;
 }
 
@@ -4817,8 +4822,8 @@ blockquote  {
 }
 
 .footer-btn-box  {
-  height: 3em;
-  padding: var(--size--mobile--xs\<deleted\|variable-5982747d-d3db-60e8-4c23-5e52fb4f53a7\>);
+  height: 2.8em;
+  padding: var(--size--mobile--xs);
   gap: 0.5rem;
   border-radius: var(--size--xxxs);
   background-color: rgba(0, 0, 0, 0.2);
@@ -4826,10 +4831,13 @@ blockquote  {
   justify-content: flex-start;
   align-items: stretch;
   font-family: DM Sans, Arial, sans-serif;
-  font-size: 1.2em;
-  line-height: 2;
+  font-size: 1em;
+  line-height: 1.5;
   transition: 0.5s;
   display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .footer-btn-box:hover  {
@@ -4895,9 +4903,36 @@ blockquote  {
 .footer-buttons  {
   z-index: 1;
   gap: 0.75rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
+}
+
+@media screen and (min-width: 1100px) {
+  .footer-buttons  {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-flex {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .footer-flags {
+    width: auto !important;
+    max-width: none !important;
+    justify-content: flex-start;
+  }
+
+  .footer-flex-item.footer-flags {
+    flex: 0 0 auto;
+  }
 }
 
 .grad-pattern  {
@@ -7331,20 +7366,29 @@ blockquote  {
     height: 20rem;
   }
   .footer-grid  {
-    row-gap: 0.5rem;
+    row-gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    padding-top: 1em;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .footer-copy  {
     text-align: left;
     flex: 1 1 0%;
-    font-size: 1.2em;
+    font-size: 1em;
+    grid-column: 1 / -1;
   }
   .footer-links  {
-    column-gap: 0em;
-    justify-content: space-between;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    justify-content: center;
     width: 100%;
     margin-left: 0px;
+    font-size: 0.95em;
+    grid-column: 1 / -1;
+  }
+  .footer-buttons  {
+    grid-column: 1 / -1;
+    width: 100%;
   }
   .popup  {
     box-shadow: rgba(6, 3, 23, 0.1) 0px 3px 15px;
@@ -7848,8 +7892,9 @@ blockquote  {
     font-size: 12.6em;
   }
   .footer-btn-box  {
-    height: 2.25em;
-    font-size: 1.35em;
+    height: 2em;
+    font-size: 0.95em;
+    padding: 0.4rem 0.6rem;
   }
   .footer-btn-box:hover  {
     border-color: var(--color--blue5);
@@ -7858,6 +7903,12 @@ blockquote  {
   .footer-btn-box.btn-social.btn-bio  {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .footer-btn-box.btn-partner  {
+    width: 2.5em;
+  }
+  .footer-btn-box.btn-partner:hover  {
+    width: 15em;
   }
   .footer-btn-box.btn-partner  {
     justify-content: flex-start;
@@ -8532,22 +8583,36 @@ blockquote  {
     height: 15rem;
   }
   .footer-grid  {
-    gap: 0.5rem 2.5rem;
+    gap: 0.5rem;
     flex-direction: column;
     grid-template-rows: auto auto auto;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .footer-copy  {
-    font-size: 1em;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
   .footer-links  {
-    gap: 16px 0em;
+    gap: 8px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     place-items: center;
-    font-size: 1.3em;
+    font-size: 0.85em;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-buttons  {
+    grid-column: auto;
+    width: 100%;
+    gap: 0.5rem;
+    margin-left: 0;
+    justify-content: center;
   }
   .text-center.reveal-fade.margin-v.margin-s  {
     align-self: center;

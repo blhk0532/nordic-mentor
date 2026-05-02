@@ -821,22 +821,82 @@
         @media (max-width: 760px) {
           .footer-flex {
             justify-content: center;
+            gap: 8px !important;
           }
 
           .block-mobile {
             display: none;
           }
+          
+          .footer-flex-item {
+            margin: 8px 0;
+          }
+          
+          .footer-btn-box {
+            height: 2.5em;
+            font-size: 1em;
+            padding: 0.5rem 8px;
+          }
+          
+          .footer-btn-box.btn-social {
+            max-width: 2.8em;
+            padding: 0px 2px;
+          }
         }
 
         @media (max-width: 520px) {
           .footer-flex {
-            gap: 10px;
+            gap: 6px !important;
+          }
+          
+          .footer-flex-item {
+            margin: 6px 0;
+          }
+          
+          .footer-btn-box {
+            height: 2.2em;
+            font-size: 0.9em;
+            padding: 0.4rem 6px;
+          }
+          
+          .footer-flags {
+            gap: 3px !important;
           }
         }
 
         @media (max-width: 768px) {
           .footer-flags-flex {
             flex-direction: column;
+            gap: 12px;
+          }
+          
+          .footer-flags {
+            width: 100%;
+            max-width: 100%;
+            gap: 4px !important;
+            justify-content: center;
+          }
+        }
+        
+        @media (max-width: 600px) {
+          .footer-flags-flex {
+            gap: 8px;
+          }
+          
+          .footer-flags {
+            gap: 3px !important;
+          }
+          
+          .footer-btn-flag {
+            width: 32px !important;
+            height: 32px !important;
+            padding: 1px !important;
+          }
+          
+          .footer-btn-flag svg {
+            width: 16px !important;
+            height: 16px !important;
+            margin: 4px !important;
           }
         }
 
@@ -4056,7 +4116,7 @@
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://nordicdigitalthailand.com/images/golang.avif"
+                        src="images/golang.avif"
                         sizes="100vw"
                         class="thumb"
                       />
@@ -4086,9 +4146,9 @@
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://nordicdigitalthailand.com/images/fr.webp"
+                        src="images/fr.webp"
                         sizes="100vw"
-                        srcset="https://nordicdigitalthailand.com/images/fr.webp"
+                        srcset="images/fr.webp"
                         class="thumb"
                       />
                       <div class="thumb-mask hide-tablet">
@@ -4115,9 +4175,9 @@
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://nordicdigitalthailand.com/images/astro.webp"
+                        src="images/astro.webp"
                         sizes="100vw"
-                        srcset="https://nordicdigitalthailand.com/images/astro.webp"
+                        srcset="images/astro.webp"
                         class="thumb"
                       />
                       <div class="thumb-mask hide-tablet">
@@ -4152,9 +4212,9 @@
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://nordicdigitalthailand.com/images/gitgit.webp"
+                        src="images/gitgit.webp"
                         sizes="100vw"
-                        srcset="https://nordicdigitalthailand.com/images/gitgit.webp"
+                        srcset="images/gitgit.webp"
                         class="thumb"
                       />
                       <div class="thumb-mask hide-tablet">
@@ -4698,7 +4758,7 @@
               </div>
               <div
                 class="footer-flex-item footer-flags"
-                style="gap: 10px; display: flex; flex-wrap: wrap; justify-content: center; width: 100%; width: 700px"
+                style="gap: 10px; display: flex; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 700px;"
               >
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
