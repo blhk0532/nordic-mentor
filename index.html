@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html
   style="max-width: 100%; overflow-x: hidden"
   data-wf-domain="www.nordicdigitalthailand.com"
@@ -8,8 +8,15 @@
 >
   <head>
     <meta charset="utf-8" />
-    <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-    <title>Nordic Digital ◥ Premium websites for bold startups. Go live in weeks, not months.</title>
+    <link
+      href="https://cdn.prod.website-files.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <title>
+      Nordic Digital ◥ Premium websites for bold startups. Go live in weeks, not
+      months.
+    </title>
     <meta
       content="We build websites that reflect your bold product and earn customer trust, without the enterprise overhead. For startups challenging the status quo."
       name="description"
@@ -54,7 +61,8 @@
     />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <style>
-      html.w-mod-js:not(.w-mod-ix3) :is([reveal="text"], [reveal="fade"], .bento-h) {
+      html.w-mod-js:not(.w-mod-ix3)
+        :is([reveal="text"], [reveal="fade"], .bento-h) {
         visibility: hidden !important;
       }
     </style>
@@ -63,11 +71,20 @@
         var n = c.documentElement,
           t = " w-mod-";
         ((n.className += t + "js"),
-          ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch"));
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch"));
       })(window, document);
     </script>
-    <link href="https://nordicdigitalthailand.com/icons/bolt.svg" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://nordicdigitalthailand.com/icons/bolt.svg" rel="apple-touch-icon" />
+    <link
+      href="https://nordicdigitalthailand.com/icons/bolt.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://nordicdigitalthailand.com/icons/bolt.svg"
+      rel="apple-touch-icon"
+    />
     <link href="index.html" rel="canonical" />
     <style>
       div[reveal-load="first"],
@@ -426,7 +443,12 @@
           inset: -1px -1px -1px auto;
           width: 200%;
           display: block;
-          background-image: linear-gradient(to right, transparent 50%, #80bfff20 75%, #cceeff40 100%);
+          background-image: linear-gradient(
+            to right,
+            transparent 50%,
+            #80bfff20 75%,
+            #cceeff40 100%
+          );
           animation: outline-diagonal 7.5s ease-in-out -4s infinite;
           clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
         }
@@ -682,7 +704,8 @@
             opacity: 1;
           }
 
-          .testimonial-item:hover .testimonial-quote:not(:has(~ .w-condition-invisible)) {
+          .testimonial-item:hover
+            .testimonial-quote:not(:has(~ .w-condition-invisible)) {
             opacity: 0.4;
           }
         }
@@ -770,6 +793,131 @@
           color: var(--color--royal-blue);
         }
 
+        .faq-item:hover .faq-question {
+          color: var(--color--white) !important;
+        }
+
+        .faq-item:hover .arrow-faq {
+          transform: translate(0, 0);
+        }
+
+        .faq-item:hover .faq-answer {
+          color: var(--color--light-chalk);
+        }
+
+        @media (orientation: portrait) and (max-width: 767px) {
+          section#faq {
+            padding: var(--size--xl) 0 !important;
+          }
+        }
+
+        .footer-logo {
+          position: absolute;
+          width: 12rem;
+        }
+
+        .Layer_1 {
+          opacity: 0.2;
+          bottom: 2rem;
+        }
+
+        .footer-logo {
+          bottom: 2rem;
+        }
+
+        .footer-link {
+          padding: 5px;
+        }
+
+        .footer-buttons {
+          margin: 0 !important;
+        }
+
+        .footer-flex {
+          justify-self: unset;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          flex-wrap: nowrap;
+        }
+
+        .footer-flex-item.footer-flags {
+          gap: 10px;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          width: auto;
+          max-width: none;
+          white-space: nowrap;
+          flex: 0 0 auto;
+        }
+
+        .footer-flex-item.footer-flags .footer-btn-flag {
+          flex: 0 0 36px;
+        }
+
+        @media (min-width: 992px) {
+          .footer-flex {
+            flex-wrap: nowrap !important;
+          }
+
+          .footer-flex-item.footer-logo-btn {
+            order: 1;
+          }
+
+          .footer-flex > .footer-btn-link {
+            order: 2;
+          }
+
+          .footer-flex-item.footer-flags {
+            order: 3;
+          }
+        }
+
+        @media (max-width: 991px) {
+          .footer-links {
+            width: 100% !important;
+            max-width: 100%;
+            padding: 1rem 0 !important;
+          }
+
+          .footer-flex {
+            flex-wrap: wrap !important;
+            row-gap: 10px;
+          }
+
+          .footer-flex > .footer-btn-link {
+            order: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .footer-flex-item.footer-flags {
+            order: 2;
+            width: 100%;
+            justify-content: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding-bottom: 2px;
+          }
+
+          .footer-flex-item.footer-flags::-webkit-scrollbar {
+            display: none;
+          }
+
+          .footer-flex-item.footer-logo-btn {
+            order: 3;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+
         .footer-flags-flex {
           display: flex;
           flex-direction: row;
@@ -804,11 +952,27 @@
         .footer-flex .footer-btn-box {
           margin: 0 !important;
           box-sizing: border-box;
-          min-width: 0 !important;
           display: flex !important;
           align-items: center;
           justify-content: center;
           width: auto;
+        }
+        .footer-nav-links {
+          padding: 2rem;
+          width: 100%;
+          margin-left: 0px;
+          max-width: 555px;
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+        .footer-flex-root {
+          justify-self: unset;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          gap: 10px;
         }
 
         @media (max-width: 1100px) {
@@ -827,17 +991,17 @@
           .block-mobile {
             display: none;
           }
-          
+
           .footer-flex-item {
             margin: 8px 0;
           }
-          
+
           .footer-btn-box {
             height: 2.5em;
             font-size: 1em;
             padding: 0.5rem 8px;
           }
-          
+
           .footer-btn-box.btn-social {
             max-width: 2.8em;
             padding: 0px 2px;
@@ -848,17 +1012,17 @@
           .footer-flex {
             gap: 6px !important;
           }
-          
+
           .footer-flex-item {
             margin: 6px 0;
           }
-          
+
           .footer-btn-box {
             height: 2.2em;
             font-size: 0.9em;
             padding: 0.4rem 6px;
           }
-          
+
           .footer-flags {
             gap: 3px !important;
           }
@@ -879,7 +1043,7 @@
             flex-direction: column;
             gap: 12px;
           }
-          
+
           .footer-flags {
             width: 100%;
             max-width: 100%;
@@ -887,27 +1051,58 @@
             justify-content: center;
           }
         }
-        
+
         @media (max-width: 600px) {
           .footer-flags-flex {
             gap: 8px;
           }
-          
+
           .footer-flags {
             gap: 3px !important;
           }
-          
+
           .footer-btn-flag {
             width: 32px !important;
             height: 32px !important;
             padding: 1px !important;
           }
-          
+
           .footer-btn-flag svg {
             width: 16px !important;
             height: 16px !important;
             margin: 4px !important;
           }
+
+          .footer-flex-root {
+            justify-self: unset;
+            display: grid;
+            width: 100%;
+            justify-content: center;
+          }
+          .footer-buttons {
+         margin-top: 5rem!important;
+          }
+          .nordic-button {
+            position: relative;
+            left: 1rem;
+          }
+          .mentor-button {
+            position: relative!important;
+            left: 1rem!important;
+            min-width: 178px !important;
+          }
+
+          .footer-nav-links {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+          }
+
+          .footer-copy {
+     position: relative;
+  top: 24px;
+          }
+
         }
 
         iframe {
@@ -958,61 +1153,104 @@
     >
       <div class="nav-bg"></div>
       <div class="nav-container">
-        <a href="index.html" class="brand w-nav-brand" style="margin-top: 0rem;z-index:1000;position: absolute;  top: 23px;  left: 24px;">
-<svg id="m30" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681 159" width="130" height="30">
-	<style>
-        .brand.w-nav-brand {
-          color: #fff !important;
-        }
+        <a
+          href="index.html"
+          class="brand w-nav-brand"
+          style="
+            margin-top: 0rem;
+            z-index: 1000;
+            position: absolute;
+            top: 23px;
+            left: 24px;
+          "
+        >
+          <svg
+            id="m30"
+            version="1.2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 681 159"
+            width="130"
+            height="30"
+          >
+            <style>
+              .brand.w-nav-brand {
+                color: #fff !important;
+              }
 
-        .brand.w-nav-brand svg {
-          display: block;
-        }
+              .brand.w-nav-brand svg {
+                display: block;
+              }
 
-        .brand.w-nav-brand.w--current {
-          pointer-events: auto;
-        }
-        .brand.w-nav-brand #m30 .s0,
-        .brand.w-nav-brand #m30 .s1,
-        .brand.w-nav-brand #m32 .s0,
-        .brand.w-nav-brand #m32 .s1 {
-          fill: currentColor !important;
-          transition: fill 0.3s ease;
-        }
+              .brand.w-nav-brand.w--current {
+                pointer-events: auto;
+              }
+              .brand.w-nav-brand #m30 .s0,
+              .brand.w-nav-brand #m30 .s1,
+              .brand.w-nav-brand #m32 .s0,
+              .brand.w-nav-brand #m32 .s1 {
+                fill: currentColor !important;
+                transition: fill 0.3s ease;
+              }
 
-        .brand.w-nav-brand:hover {
-          color: #ffd400 !important;
-        }
-                .nav-link:hover {
-          color: #ffd400 !important;
-        }
-        .footer-btn-link:hover {
-          background: #145086 !important;
-          border-color:#ffd400 !important;
-        }
-        .footer-link:hover {
-          color: #ffd400 !important;
-        }
-        .footer-btn-flag:hover {
- 
-          border-color:#ffd400 !important;
-        }
-	</style>
-	<path class="s0" d="m10.55 9c1.66 0.09 3.45 0.11 5.12 0.16 2.08 1.24 6.31 5.74 8.2 7.64l12 12.07 46.73 46.76c15.95-15.31 32.22-32.21 47.96-47.93l11.55-11.63c1.91-1.92 5.24-5.42 7.28-6.89 1.67-0.07 3.42-0.05 5.1-0.05 0.33 4.81 0.12 11.99 0.12 16.98l-0.01 31.11 0.01 96.07q-4.01-0.03-8.02-0.01c-0.18-7.79-0.32-15.61-0.34-23.39-0.01-0.63-0.44-0.79-0.88-1.11-1.15 0.06-0.78-0.13-1.51 0.57-0.49 6.63-0.14 17.05-0.12 23.95l-5.18-0.03-0.12-6.48c-0.61-10.29-0.27-26.51-0.17-37.05l-2.61 0.07c0.23 14.45-0.06 29.13 0.26 43.51l-4.94-0.1c-0.2-10.14 0-20.38 0.02-30.53 0-0.74-0.14-1.35-0.59-1.94-1.03-0.14-1.13-0.18-2.12 0.06-0.43 0.83-0.25 28.99-0.24 32.49l-9.09-0.04c-0.3-6.83-0.12-14.57-0.12-21.46l-0.07-42.11c-12.15 11.6-24.4 24.53-36.33 36.51-16.65-17.01-33.87-33.68-50.58-50.64-7.06-7.15-14.57-14.31-21.46-21.58-0.48-4.03-0.63-42.16 0.15-44.98z"/>
-	<path class="s0" d="m10.73 71.06c1 0.51 2.95 2.59 3.82 3.48 10.53 10.7 21.43 21.14 31.83 31.95 0.27 5.13 0.1 11.65 0.1 16.86l-0.01 29.9-35.7 0.01c-0.27-9.59-0.07-20.12-0.07-29.77z"/>
-	<g id="layer1">
-		<g id="g2571">
-			<path id="path2459" class="s1" d="m497.62 72.58c-2.65 4.64-6.2 8.62-7.08 13.93-2.43 10.61 1.33 21.67 9.06 29.18 7.08 7.08 16.81 9.29 26.76 7.74 9.5-2.21 19.45-10.39 22.33-19.9 4.2-12.6 0.44-25.87-9.07-34.49-6.19-5.3-13.7-8.01-21.66-8.45h-69.68v91.8h-36.44v-144.91h36.44v23.54h79.4c22.28 0 42.23 16.8 50.85 38.02 9.73 20.79 5.09 47.98-10.61 64.56-16.58 18.35-39.79 25.42-63.45 19.89-21.67-6.18-44-26.3-46.43-49.96-1.77-11.05 0-21.88 4.64-30.95z"/>
-			<path id="path2463" class="s1" d="m392.5 40.86c9.62 10.7 10.66 24.65 10.66 38.35v73.18h-33.66v-45.54c0-17.25-2.98-39.24-12.27-44-9.28-4.75-15.47-2.43-21.88 0.89-5.75 3.54-9.73 8.73-9.73 15.26v52.39h-33.88v-100.26h32.77c0 3.94 1.32 7.99 2.21 11.39 6.19-4.2 11.28-9.95 18.35-12.61 15.7-5.3 35.48-2.31 47.43 10.95z"/>
-			<path id="path2467" class="s1" d="m626.29 31.68c1.54 2.88 1.1 6.2 1.32 9.51l0.89 0.89c9.5-15.7 29.4-8.85 45.54-10.18l0.22 29.63c-13.49 0-27.41-1.77-38.69 2.88-6.19 3.75-8.18 10.16-8.4 17.01v70.97h-38.03v-120.71z"/>
-			<path id="path2471" class="s1" d="m275.65 56.44c7.74 14.59 9.29 32.72 9.07 49.75l-1.33 0.66-78.71 0.22c-1.1 0.67-0.88 1.77-0.66 2.43 9.29 10.84 22.99 16.81 36.92 15.48 11.5-1.11 21-6.64 30.51-12.61l0.66 0.67v25.86c-7.51 7.96-18.12 10.62-27.86 13.71-25.42 4.64-51.95-1.1-68.31-22.11-12.82-16.8-16.8-42.66-9.06-63.22 5.97-17.69 23.21-35.6 42-39.13 26.31-6.86 54.17 5.31 66.77 28.29zm-41.12 1.55c-5.97-3.31-15.92-3.31-21.67 0.66-6.63 3.98-10.39 10.62-10.17 18.35 0.23 1.33 1.77 1.77 3.1 1.77h37.58l1.55-1.33c0.44-3.75-0.67-7.51-1.99-10.83-1.77-3.31-5.08-6.41-8.4-8.62z"/>
-		</g>
-	</g>
-</svg>
+              .brand.w-nav-brand:hover {
+                color: #ffd400 !important;
+              }
+              .nav-link:hover {
+                color: #ffd400 !important;
+              }
+              .footer-btn-link:hover {
+                background: #145086 !important;
+                border-color: #ffd400 !important;
+              }
+              .footer-link:hover {
+                color: #ffd400 !important;
+              }
+              .footer-btn-flag:hover {
+                border-color: #ffd400 !important;
+              }
+            </style>
+            <path
+              class="s0"
+              d="m10.55 9c1.66 0.09 3.45 0.11 5.12 0.16 2.08 1.24 6.31 5.74 8.2 7.64l12 12.07 46.73 46.76c15.95-15.31 32.22-32.21 47.96-47.93l11.55-11.63c1.91-1.92 5.24-5.42 7.28-6.89 1.67-0.07 3.42-0.05 5.1-0.05 0.33 4.81 0.12 11.99 0.12 16.98l-0.01 31.11 0.01 96.07q-4.01-0.03-8.02-0.01c-0.18-7.79-0.32-15.61-0.34-23.39-0.01-0.63-0.44-0.79-0.88-1.11-1.15 0.06-0.78-0.13-1.51 0.57-0.49 6.63-0.14 17.05-0.12 23.95l-5.18-0.03-0.12-6.48c-0.61-10.29-0.27-26.51-0.17-37.05l-2.61 0.07c0.23 14.45-0.06 29.13 0.26 43.51l-4.94-0.1c-0.2-10.14 0-20.38 0.02-30.53 0-0.74-0.14-1.35-0.59-1.94-1.03-0.14-1.13-0.18-2.12 0.06-0.43 0.83-0.25 28.99-0.24 32.49l-9.09-0.04c-0.3-6.83-0.12-14.57-0.12-21.46l-0.07-42.11c-12.15 11.6-24.4 24.53-36.33 36.51-16.65-17.01-33.87-33.68-50.58-50.64-7.06-7.15-14.57-14.31-21.46-21.58-0.48-4.03-0.63-42.16 0.15-44.98z"
+            />
+            <path
+              class="s0"
+              d="m10.73 71.06c1 0.51 2.95 2.59 3.82 3.48 10.53 10.7 21.43 21.14 31.83 31.95 0.27 5.13 0.1 11.65 0.1 16.86l-0.01 29.9-35.7 0.01c-0.27-9.59-0.07-20.12-0.07-29.77z"
+            />
+            <g id="layer1">
+              <g id="g2571">
+                <path
+                  id="path2459"
+                  class="s1"
+                  d="m497.62 72.58c-2.65 4.64-6.2 8.62-7.08 13.93-2.43 10.61 1.33 21.67 9.06 29.18 7.08 7.08 16.81 9.29 26.76 7.74 9.5-2.21 19.45-10.39 22.33-19.9 4.2-12.6 0.44-25.87-9.07-34.49-6.19-5.3-13.7-8.01-21.66-8.45h-69.68v91.8h-36.44v-144.91h36.44v23.54h79.4c22.28 0 42.23 16.8 50.85 38.02 9.73 20.79 5.09 47.98-10.61 64.56-16.58 18.35-39.79 25.42-63.45 19.89-21.67-6.18-44-26.3-46.43-49.96-1.77-11.05 0-21.88 4.64-30.95z"
+                />
+                <path
+                  id="path2463"
+                  class="s1"
+                  d="m392.5 40.86c9.62 10.7 10.66 24.65 10.66 38.35v73.18h-33.66v-45.54c0-17.25-2.98-39.24-12.27-44-9.28-4.75-15.47-2.43-21.88 0.89-5.75 3.54-9.73 8.73-9.73 15.26v52.39h-33.88v-100.26h32.77c0 3.94 1.32 7.99 2.21 11.39 6.19-4.2 11.28-9.95 18.35-12.61 15.7-5.3 35.48-2.31 47.43 10.95z"
+                />
+                <path
+                  id="path2467"
+                  class="s1"
+                  d="m626.29 31.68c1.54 2.88 1.1 6.2 1.32 9.51l0.89 0.89c9.5-15.7 29.4-8.85 45.54-10.18l0.22 29.63c-13.49 0-27.41-1.77-38.69 2.88-6.19 3.75-8.18 10.16-8.4 17.01v70.97h-38.03v-120.71z"
+                />
+                <path
+                  id="path2471"
+                  class="s1"
+                  d="m275.65 56.44c7.74 14.59 9.29 32.72 9.07 49.75l-1.33 0.66-78.71 0.22c-1.1 0.67-0.88 1.77-0.66 2.43 9.29 10.84 22.99 16.81 36.92 15.48 11.5-1.11 21-6.64 30.51-12.61l0.66 0.67v25.86c-7.51 7.96-18.12 10.62-27.86 13.71-25.42 4.64-51.95-1.1-68.31-22.11-12.82-16.8-16.8-42.66-9.06-63.22 5.97-17.69 23.21-35.6 42-39.13 26.31-6.86 54.17 5.31 66.77 28.29zm-41.12 1.55c-5.97-3.31-15.92-3.31-21.67 0.66-6.63 3.98-10.39 10.62-10.17 18.35 0.23 1.33 1.77 1.77 3.1 1.77h37.58l1.55-1.33c0.44-3.75-0.67-7.51-1.99-10.83-1.77-3.31-5.08-6.41-8.4-8.62z"
+                />
+              </g>
+            </g>
+          </svg>
         </a>
         <nav role="navigation" class="nav-menu-box w-nav-menu">
           <div class="nav-links">
-            <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+            <a
+              href="index.html"
+              aria-current="page"
+              class="nav-link w-nav-link w--current"
+              >Home</a
+            >
 
             <div
               data-hover="false"
@@ -1023,7 +1261,13 @@
               <div class="nav-link w-dropdown-toggle">
                 <div>Case Studies</div>
                 <div class="dropdown-icon w-embed">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M5 7.5L10 12.5L15 7.5"
                       stroke="currentColor"
@@ -1036,9 +1280,15 @@
               </div>
               <nav class="mega-menu-box w-dropdown-list">
                 <div class="mega-menu w-dyn-list">
-                  <div role="list" class="container container-megamenu w-dyn-items">
+                  <div
+                    role="list"
+                    class="container container-megamenu w-dyn-items"
+                  >
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="tobiko.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="tobiko.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6900c8111bba0a5d540e0309_thumbnail.avif"
@@ -1048,12 +1298,16 @@
                           <p class="mega-item-name">Tobiko</p>
                         </div>
                         <div class="mega-item-title">
-                          How the Tobiko rebrand primed a niche data startup for rapid growth &amp; acquisition
+                          How the Tobiko rebrand primed a niche data startup for
+                          rapid growth &amp; acquisition
                         </div>
                       </a>
                     </div>
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="quotient-ai.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="quotient-ai.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bc242d7d5d611e95cd82f5_thumbnail.avif"
@@ -1063,12 +1317,16 @@
                           <p class="mega-item-name">Quotient AI</p>
                         </div>
                         <div class="mega-item-title">
-                          Quotient AI: From rebrand to successful exit in under two months
+                          Quotient AI: From rebrand to successful exit in under
+                          two months
                         </div>
                       </a>
                     </div>
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="aampe.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="aampe.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1fd_thumbnail-aampe.webp"
@@ -1077,11 +1335,16 @@
                           />
                           <p class="mega-item-name">Aampe</p>
                         </div>
-                        <div class="mega-item-title">How we made Aampe's agentic superpowers shine</div>
+                        <div class="mega-item-title">
+                          How we made Aampe's agentic superpowers shine
+                        </div>
                       </a>
                     </div>
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="lumenstream.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="lumenstream.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/693051a262aaac1ca922aef0_thumbnail.jpg"
@@ -1091,12 +1354,16 @@
                           <p class="mega-item-name">LumenStream</p>
                         </div>
                         <div class="mega-item-title">
-                          Lighting the way: Building trust around an innovative business model
+                          Lighting the way: Building trust around an innovative
+                          business model
                         </div>
                       </a>
                     </div>
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="start2coin.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="start2coin.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd20f_thumbnail-s2c.webp"
@@ -1105,11 +1372,16 @@
                           />
                           <p class="mega-item-name">Start2Coin</p>
                         </div>
-                        <div class="mega-item-title">Making cryptos easily accessible to the Everyman</div>
+                        <div class="mega-item-title">
+                          Making cryptos easily accessible to the Everyman
+                        </div>
                       </a>
                     </div>
                     <div role="listitem" class="mega-item w-dyn-item">
-                      <a href="day-by-day.html" class="mega-item-link w-inline-block">
+                      <a
+                        href="day-by-day.html"
+                        class="mega-item-link w-inline-block"
+                      >
                         <div class="mega-img-box">
                           <img
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1ed_thumbnail-dbd.webp"
@@ -1118,16 +1390,25 @@
                           />
                           <p class="mega-item-name">Day by Day</p>
                         </div>
-                        <div class="mega-item-title">Unlocking growth through strategic brand development</div>
+                        <div class="mega-item-title">
+                          Unlocking growth through strategic brand development
+                        </div>
                       </a>
                     </div>
                   </div>
                 </div>
               </nav>
             </div>
-            <a href="#work" style="display: none" class="nav-link w-nav-link">Featured</a>
+            <a href="#work" style="display: none" class="nav-link w-nav-link"
+              >Featured</a
+            >
             <a href="about.html" class="nav-link w-nav-link">About</a>
-            <a style="display: none" href="blog.html" class="nav-link w-nav-link">Blog</a>
+            <a
+              style="display: none"
+              href="blog.html"
+              class="nav-link w-nav-link"
+              >Blog</a
+            >
             <a href="contact.html" class="nav-link w-nav-link">Contact</a>
           </div>
           <div class="nav-cta">
@@ -1222,27 +1503,37 @@
         border-radius: var(--size--xxxs);
       }
     }*/
-    @media (orientation: landscape) and (min-width: 992px) {
-  .nav-link-box.w-dropdown {
-    position: static; /* so menu can size from nav container */
-  }
+          @media (orientation: landscape) and (min-width: 992px) {
+            .nav-link-box.w-dropdown {
+              position: static; /* so menu can size from nav container */
+            }
 
-  .nav-link-box .mega-menu-box.w-dropdown-list.w--open {
-    left: 0;
-    right: 0;
-    width: 100vw;      /* full viewport width */
-    max-width: 100vw;
-  }
-}
+            .nav-link-box .mega-menu-box.w-dropdown-list.w--open {
+              left: 0;
+              right: 0;
+              width: 100vw; /* full viewport width */
+              max-width: 100vw;
+            }
+          }
         </style>
       </div>
     </div>
     <div id="wrap" class="page-wrapper">
       <main id="main" class="main-wrapper">
-        <section data-w-id="328a91d2-8e47-10bb-3e26-2dcb3583b2da" class="section section-hero">
+        <section
+          data-w-id="328a91d2-8e47-10bb-3e26-2dcb3583b2da"
+          class="section section-hero"
+        >
           <div class="container">
-            <div id="w-node-b32a427a-6f84-2682-d20b-17631cb4ad23-92f21887" class="grid">
-              <div reveal-load="first" id="w-node-_328a91d2-8e47-10bb-3e26-2dcb3583b2dc-92f21887" class="hero-text">
+            <div
+              id="w-node-b32a427a-6f84-2682-d20b-17631cb4ad23-92f21887"
+              class="grid"
+            >
+              <div
+                reveal-load="first"
+                id="w-node-_328a91d2-8e47-10bb-3e26-2dcb3583b2dc-92f21887"
+                class="hero-text"
+              >
                 <div
                   style="width: 260px; height: 42px"
                   id="w-node-_63f43c47-0e2c-2d30-a7a7-2641987f81d9-0a5b5fdc"
@@ -1250,14 +1541,26 @@
                 >
                   <a href="index.html" class="brand w-nav-brand w--current">
                     <img
-                      style="height: 48px; width: 48px; position: absolute; left: -12px; top: 1px"
+                      style="
+                        height: 48px;
+                        width: 48px;
+                        position: absolute;
+                        left: -12px;
+                        top: 1px;
+                      "
                       src="https://nordicdigitalthailand.com/icons/bolt.svg"
                       loading="lazy"
                       alt="nordicdigitalthailand.com logo, white option, svg icon"
                       class="logo-icon"
                     />
                     <img
-                      style="width: 242px; height: 48px; position: relative; bottom: 2px; left: -12px"
+                      style="
+                        width: 242px;
+                        height: 48px;
+                        position: relative;
+                        bottom: 2px;
+                        left: -12px;
+                      "
                       src="https://nordicdigitalthailand.com/icons/logotype.svg"
                       loading="eager"
                       alt="nordicdigitalthailand.com Logo"
@@ -1267,43 +1570,66 @@
                 </div>
                 <h1 class="hero-h">Make your products impossible to ignore</h1>
                 <div class="grid margin-bottom margin-xxxs">
-                  <p id="w-node-c01291d9-e5bc-6e48-876e-460d1adb3bf2-92f21887" class="hero-p">
-                    We create brand systems and websites that close the gap between what you've built, and how the
-                    market sees it.
+                  <p
+                    id="w-node-c01291d9-e5bc-6e48-876e-460d1adb3bf2-92f21887"
+                    class="hero-p"
+                  >
+                    We create brand systems and websites that close the gap
+                    between what you've built, and how the market sees it.
                   </p>
                 </div>
                 <div class="button-group">
-                  <a id="hero-cta" rocket="hover" href="#" class="button button-call w-button">
+                  <a
+                    id="hero-cta"
+                    rocket="hover"
+                    href="#"
+                    class="button button-call w-button"
+                  >
                     Book a Discovery&nbsp;Call
                   </a>
                 </div>
                 <div class="grid grid-perks">
-                  <div id="w-node-fb285ac0-a7fa-dfe8-5dd8-6489d679c4f9-92f21887" class="flex gap-xxs">
+                  <div
+                    id="w-node-fb285ac0-a7fa-dfe8-5dd8-6489d679c4f9-92f21887"
+                    class="flex gap-xxs"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                       loading="eager"
                       alt=""
                       class="perk-check"
                     />
-                    <p class="margin-0 text-slim">Flat rate, clear scope &amp; deliverables</p>
+                    <p class="margin-0 text-slim">
+                      Flat rate, clear scope &amp; deliverables
+                    </p>
                   </div>
-                  <div id="w-node-_68937190-7f5f-fad9-3999-fd8f6da210e1-92f21887" class="flex gap-xxs">
+                  <div
+                    id="w-node-_68937190-7f5f-fad9-3999-fd8f6da210e1-92f21887"
+                    class="flex gap-xxs"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                       loading="eager"
                       alt=""
                       class="perk-check"
                     />
-                    <p class="margin-0 text-slim">Clean Webflow base, yours to own</p>
+                    <p class="margin-0 text-slim">
+                      Clean Webflow base, yours to own
+                    </p>
                   </div>
-                  <div id="w-node-_8ef489c5-86eb-d6ed-d86f-59b49fe2fe82-92f21887" class="flex gap-xxs">
+                  <div
+                    id="w-node-_8ef489c5-86eb-d6ed-d86f-59b49fe2fe82-92f21887"
+                    class="flex gap-xxs"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                       loading="eager"
                       alt=""
                       class="perk-check"
                     />
-                    <p class="margin-0 text-slim">Brand systems that scale with you</p>
+                    <p class="margin-0 text-slim">
+                      Brand systems that scale with you
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1316,7 +1642,10 @@
                 class="hero-tabs w-tabs"
               >
                 <div class="hero-tabs-list w-tab-menu">
-                  <a data-w-tab="Tab 1" class="tab-item w-inline-block w-tab-link">
+                  <a
+                    data-w-tab="Tab 1"
+                    class="tab-item w-inline-block w-tab-link"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978b19381763117ceb60060_glyph-design.svg"
                       loading="lazy"
@@ -1325,7 +1654,10 @@
                     />
                     <div class="tab-item-text">Design</div>
                   </a>
-                  <a data-w-tab="Tab 2" class="tab-item w-inline-block w-tab-link">
+                  <a
+                    data-w-tab="Tab 2"
+                    class="tab-item w-inline-block w-tab-link"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978b193d894368373676a30_glyph-develop.svg"
                       loading="lazy"
@@ -1334,7 +1666,10 @@
                     />
                     <div class="tab-item-text">Develop</div>
                   </a>
-                  <a data-w-tab="Tab 3" class="tab-item w-inline-block w-tab-link w--current">
+                  <a
+                    data-w-tab="Tab 3"
+                    class="tab-item w-inline-block w-tab-link w--current"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978b194af92b0027e6e95b1_glyph-launch.svg"
                       loading="lazy"
@@ -1359,7 +1694,10 @@
                       alt=""
                     />
                   </div>
-                  <div data-w-tab="Tab 3" class="hero-tab-content w-tab-pane w--tab-active">
+                  <div
+                    data-w-tab="Tab 3"
+                    class="hero-tab-content w-tab-pane w--tab-active"
+                  >
                     <div class="hero-rocket">
                       <img
                         loading="eager"
@@ -1404,7 +1742,10 @@
                                 class="rocket-smoke smoke4"
                               />
                             </div>
-                            <div data-w-id="ee582cf7-d7d0-86cf-adc5-06aeac66bf23" class="rocket-smoke-box">
+                            <div
+                              data-w-id="ee582cf7-d7d0-86cf-adc5-06aeac66bf23"
+                              class="rocket-smoke-box"
+                            >
                               <img
                                 sizes="(max-width: 1919px) 65vw, 1183px"
                                 srcset="
@@ -1418,7 +1759,10 @@
                                 class="rocket-smoke smoke3"
                               />
                             </div>
-                            <div data-w-id="35a96896-9555-74f9-d62d-2d1c0f1a3404" class="rocket-smoke-box">
+                            <div
+                              data-w-id="35a96896-9555-74f9-d62d-2d1c0f1a3404"
+                              class="rocket-smoke-box"
+                            >
                               <img
                                 sizes="(max-width: 1919px) 70vw, 1274px"
                                 srcset="
@@ -1432,7 +1776,10 @@
                                 class="rocket-smoke smoke2"
                               />
                             </div>
-                            <div data-w-id="72b0a2d5-8a0e-0e94-3a05-31da049b6c95" class="rocket-smoke-box">
+                            <div
+                              data-w-id="72b0a2d5-8a0e-0e94-3a05-31da049b6c95"
+                              class="rocket-smoke-box"
+                            >
                               <img
                                 sizes="(max-width: 1919px) 75vw, 1365px"
                                 srcset="
@@ -1645,8 +1992,20 @@
               .clients-hero:after,
               .process-scene:before,
               .process-scene:after {
-                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
-                mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+                -webkit-mask-image: linear-gradient(
+                  to right,
+                  transparent 0%,
+                  black 20%,
+                  black 80%,
+                  transparent 100%
+                );
+                mask-image: linear-gradient(
+                  to right,
+                  transparent 0%,
+                  black 20%,
+                  black 80%,
+                  transparent 100%
+                );
               }
 
               .clients-hero:after,
@@ -1729,8 +2088,16 @@
               }
 
               .smoke {
-                -webkit-mask-image: linear-gradient(to bottom, black 90%, black 100%);
-                mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+                -webkit-mask-image: linear-gradient(
+                  to bottom,
+                  black 90%,
+                  black 100%
+                );
+                mask-image: linear-gradient(
+                  to bottom,
+                  black 90%,
+                  transparent 100%
+                );
               }
 
               .rocket-hero,
@@ -1816,7 +2183,8 @@
               }
 
               .clients-hero .client-logo-img {
-                animation: clientFlip 30s cubic-bezier(0.44, 0, 0.56, 1) infinite reverse;
+                animation: clientFlip 30s cubic-bezier(0.44, 0, 0.56, 1)
+                  infinite reverse;
               }
 
               .client-logo:nth-child(2) .client-logo-img {
@@ -1925,19 +2293,39 @@
                 }
 
                 .rocket-bg {
-                  -webkit-mask-image: linear-gradient(to bottom, black 82%, transparent 82%);
-                  mask-image: linear-gradient(to bottom, black 82%, transparent 82%);
+                  -webkit-mask-image: linear-gradient(
+                    to bottom,
+                    black 82%,
+                    transparent 82%
+                  );
+                  mask-image: linear-gradient(
+                    to bottom,
+                    black 82%,
+                    transparent 82%
+                  );
                 }
 
                 .rocket-bg.keyboard {
-                  -webkit-mask-image: linear-gradient(to bottom, transparent 82%, black 82%);
-                  mask-image: linear-gradient(to bottom, transparent 82%, black 82%);
+                  -webkit-mask-image: linear-gradient(
+                    to bottom,
+                    transparent 82%,
+                    black 82%
+                  );
+                  mask-image: linear-gradient(
+                    to bottom,
+                    transparent 82%,
+                    black 82%
+                  );
                 }
               }
             </style>
           </div>
         </section>
-        <section id="benefits" bg="white" class="section section-white padding-v padding-xl z-index-1">
+        <section
+          id="benefits"
+          bg="white"
+          class="section section-white padding-v padding-xl z-index-1"
+        >
           <div class="grad-bg to-right"></div>
           <div class="container">
             <div reveal="" class="flex mid-aligned vertical gap-xs">
@@ -1945,7 +2333,10 @@
                 Built for your next stage
                 <span class="block-tablet inline-mobile">of growth</span>
               </h2>
-              <div reveal="fade" class="white-box floating-box _w-full margin-top margin-xs padding-s">
+              <div
+                reveal="fade"
+                class="white-box floating-box _w-full margin-top margin-xs padding-s"
+              >
                 <div class="list-benefits">
                   <div
                     id="w-node-_481c1d89-a135-50a7-3168-f6447e94e518-92f21887"
@@ -1967,15 +2358,19 @@
                       data-duration="0.6"
                       data-loading="eager"
                     ></div>
-                    <div id="w-node-_481c1d89-a135-50a7-3168-f6447e94e51a-92f21887" class="flex vertical gap-xxs">
+                    <div
+                      id="w-node-_481c1d89-a135-50a7-3168-f6447e94e51a-92f21887"
+                      class="flex vertical gap-xxs"
+                    >
                       <h4 class="white-box-h">
                         Showcasing your
                         <br />
                         product's value
                       </h4>
                       <p class="margin-0 maxw-m wrap-balance">
-                        Make your product's strength clear from the first visit, so buyers understand the value before
-                        they ever talk to sales.
+                        Make your product's strength clear from the first visit,
+                        so buyers understand the value before they ever talk to
+                        sales.
                       </p>
                     </div>
                   </div>
@@ -1999,14 +2394,18 @@
                       data-duration="0.6"
                       data-loading="eager"
                     ></div>
-                    <div id="w-node-_481c1d89-a135-50a7-3168-f6447e94e521-92f21887" class="flex vertical gap-xxs">
+                    <div
+                      id="w-node-_481c1d89-a135-50a7-3168-f6447e94e521-92f21887"
+                      class="flex vertical gap-xxs"
+                    >
                       <h4 class="white-box-h">
                         Engineered to
                         <br />
                         drive conversion
                       </h4>
                       <p class="margin-0 maxw-m wrap-balance">
-                        Close the gap between your quality of your product and the confidence buyers need to act on it.
+                        Close the gap between your quality of your product and
+                        the confidence buyers need to act on it.
                       </p>
                     </div>
                   </div>
@@ -2030,14 +2429,18 @@
                       data-duration="0.6"
                       data-loading="eager"
                     ></div>
-                    <div id="w-node-_481c1d89-a135-50a7-3168-f6447e94e52a-92f21887" class="flex vertical gap-xxs">
+                    <div
+                      id="w-node-_481c1d89-a135-50a7-3168-f6447e94e52a-92f21887"
+                      class="flex vertical gap-xxs"
+                    >
                       <h4 class="white-box-h">
                         Supporting your
                         <br />
                         product as it grows
                       </h4>
                       <p class="margin-0 maxw-m wrap-balance">
-                        A clean Webflow build that scales with your product, and that your marketing team will own.
+                        A clean Webflow build that scales with your product, and
+                        that your marketing team will own.
                       </p>
                     </div>
                   </div>
@@ -2047,11 +2450,21 @@
           </div>
         </section>
 
-        <section id="transformation" class="section z-index-1 padding-v padding-xxl">
+        <section
+          id="transformation"
+          class="section z-index-1 padding-v padding-xxl"
+        >
           <div reveal="" class="container z-index-1">
             <div class="grid grid-transformation">
-              <div id="w-node-_4b06acec-11dd-c543-8a6c-6b3e201f76a7-92f21887" class="text-large">
-                <h2 reveal="text" id="w-node-_0b156923-e6c6-46f3-7e0d-1b245fee12af-92f21887" class="text-center">
+              <div
+                id="w-node-_4b06acec-11dd-c543-8a6c-6b3e201f76a7-92f21887"
+                class="text-large"
+              >
+                <h2
+                  reveal="text"
+                  id="w-node-_0b156923-e6c6-46f3-7e0d-1b245fee12af-92f21887"
+                  class="text-center"
+                >
                   When your brand carries its weight
                 </h2>
               </div>
@@ -2065,53 +2478,96 @@
                 id="w-node-c747f494-cc19-30c5-0ce2-1a96399ed9f2-92f21887"
                 class="before-box hide-tablet"
               >
-                <h4 class="pre-h pre-h-blue margin-top margin-xs">FROM HELD BACK AND SPREAD THIN…</h4>
-                <div id="w-node-_7db96327-a7ec-4678-8e5f-a554c0522c57-92f21887" class="before-item">
+                <h4 class="pre-h pre-h-blue margin-top margin-xs">
+                  FROM HELD BACK AND SPREAD THIN…
+                </h4>
+                <div
+                  id="w-node-_7db96327-a7ec-4678-8e5f-a554c0522c57-92f21887"
+                  class="before-item"
+                >
                   <img
                     src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/69ef6b1683841b33af610640_icon-transform-before.svg"
                     loading="lazy"
                     alt=""
                     class="icon-before"
                   />
-                  <h4 id="w-node-_2d980afa-7370-8dbd-880a-eed2a8191628-92f21887" class="before-h">
+                  <h4
+                    id="w-node-_2d980afa-7370-8dbd-880a-eed2a8191628-92f21887"
+                    class="before-h"
+                  >
                     Enterprise deals slip away
                   </h4>
-                  <p id="w-node-_511eabb7-f6f6-8d94-7506-4445bf4f9aaf-92f21887" class="wrap-balance text-slim">
-                    Buyers visit the site, lose confidence, and stop replying without telling you why.
+                  <p
+                    id="w-node-_511eabb7-f6f6-8d94-7506-4445bf4f9aaf-92f21887"
+                    class="wrap-balance text-slim"
+                  >
+                    Buyers visit the site, lose confidence, and stop replying
+                    without telling you why.
                   </p>
                 </div>
-                <div id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d2-92f21887" class="before-item">
+                <div
+                  id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d2-92f21887"
+                  class="before-item"
+                >
                   <img
                     src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/69ef6b1683841b33af610640_icon-transform-before.svg"
                     loading="lazy"
                     alt=""
                     class="icon-before"
                   />
-                  <p id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d6-92f21887" class="wrap-balance text-slim">
-                    Every rep tells a slightly different story because the brand never gave them one.
+                  <p
+                    id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d6-92f21887"
+                    class="wrap-balance text-slim"
+                  >
+                    Every rep tells a slightly different story because the brand
+                    never gave them one.
                   </p>
-                  <h4 id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d4-92f21887" class="before-h">Sales cycles drag</h4>
+                  <h4
+                    id="w-node-_44924db8-4f21-3e58-8b96-3822d463c2d4-92f21887"
+                    class="before-h"
+                  >
+                    Sales cycles drag
+                  </h4>
                 </div>
-                <div id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dba-92f21887" class="before-item">
+                <div
+                  id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dba-92f21887"
+                  class="before-item"
+                >
                   <img
                     src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/69ef6b1683841b33af610640_icon-transform-before.svg"
                     loading="lazy"
                     alt=""
                     class="icon-before"
                   />
-                  <h4 id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dbc-92f21887" class="before-h">
+                  <h4
+                    id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dbc-92f21887"
+                    class="before-h"
+                  >
                     Weaker products win
                   </h4>
-                  <p id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dbe-92f21887" class="wrap-balance text-slim">
-                    Competitors with weaker products and stronger brands eat your market.
+                  <p
+                    id="w-node-_38241f74-908b-0bb9-4eae-af83cb7b1dbe-92f21887"
+                    class="wrap-balance text-slim"
+                  >
+                    Competitors with weaker products and stronger brands eat
+                    your market.
                   </p>
                 </div>
               </div>
-              <div reveal="fade" id="w-node-_80021a60-9d8a-d60c-1819-285f18325891-92f21887" class="transformation-box">
+              <div
+                reveal="fade"
+                id="w-node-_80021a60-9d8a-d60c-1819-285f18325891-92f21887"
+                class="transformation-box"
+              >
                 <div class="white-box after-box">
-                  <div id="w-node-_327a7fb8-c1ee-fbec-172e-6fdbf6abc7d1-92f21887" class="after-grid">
+                  <div
+                    id="w-node-_327a7fb8-c1ee-fbec-172e-6fdbf6abc7d1-92f21887"
+                    class="after-grid"
+                  >
                     <div class="text-larger margin-center">
-                      <h4 class="pre-h margin-top margin-xs hide-tablet">TO ENERGIZED AND IN COMMAND</h4>
+                      <h4 class="pre-h margin-top margin-xs hide-tablet">
+                        TO ENERGIZED AND IN COMMAND
+                      </h4>
                     </div>
                     <div class="after-item margin-top margin-xs">
                       <img
@@ -2120,13 +2576,20 @@
                         alt=""
                         class="icon-after"
                       />
-                      <h4 id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e97f-92f21887" class="after-h">
+                      <h4
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e97f-92f21887"
+                        class="after-h"
+                      >
                         Enterprise buyers
                         <br />
                         trust you on sight
                       </h4>
-                      <p id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e981-92f21887" class="wrap-balance">
-                        Sales cycles shorten because the brand earns trust before the rep does.
+                      <p
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e981-92f21887"
+                        class="wrap-balance"
+                      >
+                        Sales cycles shorten because the brand earns trust
+                        before the rep does.
                       </p>
                     </div>
                     <div class="after-item">
@@ -2136,13 +2599,20 @@
                         alt=""
                         class="icon-after"
                       />
-                      <h4 id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e985-92f21887" class="after-h">
+                      <h4
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e985-92f21887"
+                        class="after-h"
+                      >
                         Confidence that
                         <br />
                         compounds
                       </h4>
-                      <p id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e987-92f21887" class="wrap-balance">
-                        All team members share the same story, energized by what they're building.
+                      <p
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e987-92f21887"
+                        class="wrap-balance"
+                      >
+                        All team members share the same story, energized by what
+                        they're building.
                       </p>
                     </div>
                     <div class="after-item">
@@ -2152,18 +2622,27 @@
                         alt=""
                         class="icon-after"
                       />
-                      <h4 id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e98b-92f21887" class="after-h">
+                      <h4
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e98b-92f21887"
+                        class="after-h"
+                      >
                         Time and energy,
                         <br />
                         back to you
                       </h4>
-                      <p id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e98d-92f21887" class="wrap-balance">
-                        You’re free to focus on the product and the company you're building.
+                      <p
+                        id="w-node-b620c293-43ad-ec77-aeb2-abd4b963e98d-92f21887"
+                        class="wrap-balance"
+                      >
+                        You’re free to focus on the product and the company
+                        you're building.
                       </p>
                     </div>
                   </div>
                   <div class="padding-xxs">
-                    <a href="#" class="button button-call _w-full w-button">Start making this your reality</a>
+                    <a href="#" class="button button-call _w-full w-button"
+                      >Start making this your reality</a
+                    >
                   </div>
                 </div>
                 <div reveal="fade" class="transformation-glow"></div>
@@ -2175,7 +2654,11 @@
         <section id="work" class="section z-index-1 padding-v padding-m">
           <div reveal="" class="container z-index-1">
             <div class="text-larger grid margin-bottom margin-s">
-              <h2 reveal="text" id="w-node-_4aa02272-f2b1-1eac-8679-33a05c9f836a-92f21887" class="text-center">
+              <h2
+                reveal="text"
+                id="w-node-_4aa02272-f2b1-1eac-8679-33a05c9f836a-92f21887"
+                class="text-center"
+              >
                 Featured Work
               </h2>
               <div
@@ -2218,7 +2701,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note">Acquired by Fivetran</h4>
-                      <h2 class="bento-h">Paving the road for rapid growth &amp; acquisition</h2>
+                      <h2 class="bento-h">
+                        Paving the road for rapid growth &amp; acquisition
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2255,7 +2740,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note">Acquired by Databricks</h4>
-                      <h2 class="bento-h">From rebrand to successful exit in under two months</h2>
+                      <h2 class="bento-h">
+                        From rebrand to successful exit in under two months
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2299,7 +2786,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note w-dyn-bind-empty"></h4>
-                      <h2 class="bento-h">How we made Aampe's agentic superpowers shine</h2>
+                      <h2 class="bento-h">
+                        How we made Aampe's agentic superpowers shine
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2343,7 +2832,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note w-dyn-bind-empty"></h4>
-                      <h2 class="bento-h">Building trust around an innovative business model</h2>
+                      <h2 class="bento-h">
+                        Building trust around an innovative business model
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2387,7 +2878,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note w-dyn-bind-empty"></h4>
-                      <h2 class="bento-h">Making cryptos easily accessible to the Everyman</h2>
+                      <h2 class="bento-h">
+                        Making cryptos easily accessible to the Everyman
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2431,7 +2924,9 @@
                         class="bento-logo"
                       />
                       <h4 class="bento-note w-dyn-bind-empty"></h4>
-                      <h2 class="bento-h">Unlocking growth through strategic brand development</h2>
+                      <h2 class="bento-h">
+                        Unlocking growth through strategic brand development
+                      </h2>
                     </div>
                   </a>
                   <div class="bento-glow"></div>
@@ -2631,21 +3126,27 @@
                       id="w-node-_50089ecc-fe02-eacb-d303-26aa85d05983-85d0591d"
                       class="w-layout-vflex text-large flex gap-xxxs"
                     >
-                      <h4 class="white-box-h">Brand Positioning &amp; Messaging</h4>
+                      <h4 class="white-box-h">
+                        Brand Positioning &amp; Messaging
+                      </h4>
                       <div class="separator margin-v margin-xxxs"></div>
                       <div class="maxw-xxl">
                         <p class="text-demi">
-                          A focused two-week sprint that will uncover what makes your product matter.
+                          A focused two-week sprint that will uncover what makes
+                          your product matter.
                         </p>
                         <p>
-                          You'll walk away with a Strategy Roadmap that clarifies your place in the market, and aligns
-                          your positioning with what your company has become.
+                          You'll walk away with a Strategy Roadmap that
+                          clarifies your place in the market, and aligns your
+                          positioning with what your company has become.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="padding-xxs _w-full">
-                    <a href="#" class="button tertiary button-call w-button">Get Brand Clarity</a>
+                    <a href="#" class="button tertiary button-call w-button"
+                      >Get Brand Clarity</a
+                    >
                   </div>
                 </div>
                 <div
@@ -2663,19 +3164,27 @@
                       id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0599e-85d0591d"
                       class="w-layout-vflex text-large flex gap-xxxs"
                     >
-                      <h4 class="white-box-h">Identity Design &amp; Brand Styleguide</h4>
+                      <h4 class="white-box-h">
+                        Identity Design &amp; Brand Styleguide
+                      </h4>
                       <div class="separator margin-v margin-xxxs"></div>
                       <div class="maxw-xxl">
-                        <p class="text-demi">A comprehensive identity system to express your brand with confidence</p>
+                        <p class="text-demi">
+                          A comprehensive identity system to express your brand
+                          with confidence
+                        </p>
                         <p>
-                          A distinctive visual identity built to represent who you've become, supported by a digital
-                          styleguide that keeps your brand consistent everywhere it shows up.
+                          A distinctive visual identity built to represent who
+                          you've become, supported by a digital styleguide that
+                          keeps your brand consistent everywhere it shows up.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="padding-xxs _w-full">
-                    <a href="#" class="button tertiary button-call w-button">Refine Your Brand</a>
+                    <a href="#" class="button tertiary button-call w-button"
+                      >Refine Your Brand</a
+                    >
                   </div>
                 </div>
                 <div
@@ -2705,9 +3214,15 @@
                       data-duration="0"
                       data-loading="eager"
                     ></div>
-                    <h3 id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0592e-85d0591d" class="price-h">
+                    <h3
+                      id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0592e-85d0591d"
+                      class="price-h"
+                    >
                       Website
-                      <br data-wf-component-id="50089ecc-fe02-eacb-d303-26aa85d0591d" data-wf-variant-state="base" />
+                      <br
+                        data-wf-component-id="50089ecc-fe02-eacb-d303-26aa85d0591d"
+                        data-wf-variant-state="base"
+                      />
                       Launch-Pad
                     </h3>
                     <div
@@ -2716,7 +3231,8 @@
                     >
                       <div class="maxw-xxl text-larger">
                         <p class="maxw-l margin-0 text-demi">
-                          An 8-week process that delivers a high-end, lightning-fast website that proves you've arrived.
+                          An 8-week process that delivers a high-end,
+                          lightning-fast website that proves you've arrived.
                           <br
                             data-wf-component-id="50089ecc-fe02-eacb-d303-26aa85d0591d"
                             data-wf-variant-state="base"
@@ -2734,10 +3250,15 @@
                           />
                           <p class="margin-0">
                             Bespoke designs in&nbsp;Figma:&nbsp;6-10 pages
-                            <span class="hide-mobile">(static &amp;&nbsp;dynamic)</span>
+                            <span class="hide-mobile"
+                              >(static &amp;&nbsp;dynamic)</span
+                            >
                           </p>
                         </div>
-                        <div id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0594e-85d0591d" class="flex gap-xxs">
+                        <div
+                          id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0594e-85d0591d"
+                          class="flex gap-xxs"
+                        >
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
@@ -2756,7 +3277,9 @@
                             alt=""
                             class="perk-check"
                           />
-                          <p class="margin-0">Easy updates and integrated version control</p>
+                          <p class="margin-0">
+                            Easy updates and integrated version control
+                          </p>
                         </div>
                         <div class="flex gap-xxs">
                           <img
@@ -2765,16 +3288,23 @@
                             alt=""
                             class="perk-check"
                           />
-                          <p class="margin-0">Custom animations and interactivity</p>
+                          <p class="margin-0">
+                            Custom animations and interactivity
+                          </p>
                         </div>
-                        <div id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0595a-85d0591d" class="flex gap-xxs">
+                        <div
+                          id="w-node-_50089ecc-fe02-eacb-d303-26aa85d0595a-85d0591d"
+                          class="flex gap-xxs"
+                        >
                           <img
                             loading="eager"
                             src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                             alt=""
                             class="perk-check"
                           />
-                          <p class="margin-0">Optimization for SEO&nbsp;and AEO</p>
+                          <p class="margin-0">
+                            Optimization for SEO&nbsp;and AEO
+                          </p>
                         </div>
                         <div class="flex gap-xxs">
                           <img
@@ -2800,12 +3330,17 @@
                           />
                           <p class="margin-0">
                             Brand Positioning &amp; Messaging
-                            <span addons="expand" class="text-pill text-smaller">
+                            <span
+                              addons="expand"
+                              class="text-pill text-smaller"
+                            >
                               Add-on
                               <em class="hide-mobile">available</em>
                             </span>
                             <em></em>
-                            <span class="text-pill text-smaller text-pill-added">Added</span>
+                            <span class="text-pill text-smaller text-pill-added"
+                              >Added</span
+                            >
                           </p>
                         </div>
                         <div class="flex gap-xxs perk-add-box">
@@ -2823,21 +3358,32 @@
                           />
                           <p class="margin-0">
                             Identity Design &amp; Brand&nbsp;Styleguide
-                            <span addons="expand" class="text-pill text-smaller">
+                            <span
+                              addons="expand"
+                              class="text-pill text-smaller"
+                            >
                               Add-on
                               <em class="hide-mobile">available</em>
                             </span>
-                            <span class="text-pill text-smaller text-pill-added">Added</span>
+                            <span class="text-pill text-smaller text-pill-added"
+                              >Added</span
+                            >
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="product-btn-box">
-                    <a addons="expand" href="#" class="button tertiary _w-full hide-tablet w-button">
+                    <a
+                      addons="expand"
+                      href="#"
+                      class="button tertiary _w-full hide-tablet w-button"
+                    >
                       See Available Add-ons
                     </a>
-                    <a href="#" class="button button-call _w-full w-button">Book a Discovery Call</a>
+                    <a href="#" class="button button-call _w-full w-button"
+                      >Book a Discovery Call</a
+                    >
                   </div>
                 </div>
               </div>
@@ -2877,7 +3423,8 @@
 
               .collapsed .product-box {
                 outline: none;
-                box-shadow: 0 var(--size--xs) var(--size--m) -10px var(--color--darken);
+                box-shadow: 0 var(--size--xs) var(--size--m) -10px
+                  var(--color--darken);
               }
 
               .product-box:last-child {
@@ -2941,7 +3488,9 @@
                 opacity: 1;
               }
 
-              .grid-product:not(.collapsed) .product-box:last-child .button.tertiary,
+              .grid-product:not(.collapsed)
+                .product-box:last-child
+                .button.tertiary,
               .grid-product:not(.collapsed) .text-pill {
                 pointer-events: none;
               }
@@ -3004,13 +3553,20 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Many agencies I’ve worked with in the past required hand-holding and extensive feedback, but
-                          not Nordic. They had a clear vision and were proactive from day one, going above and beyond to
-                          build a cohesive brand for our highly technical product. Their responsiveness meant I could
-                          trust that Tobiko’s website was always in great hands.
+                          Many agencies I’ve worked with in the past required
+                          hand-holding and extensive feedback, but not Nordic.
+                          They had a clear vision and were proactive from day
+                          one, going above and beyond to build a cohesive brand
+                          for our highly technical product. Their responsiveness
+                          meant I could trust that Tobiko’s website was always
+                          in great hands.
                         </p>
                         <div class="button-testimonial-box">
-                          <a href="tobiko.html" target="_blank" class="button secondary w-button">
+                          <a
+                            href="tobiko.html"
+                            target="_blank"
+                            class="button secondary w-button"
+                          >
                             View Case Study
                           </a>
                         </div>
@@ -3023,10 +3579,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Carol Lu-Vernooij
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Head of Marketing, Tobiko Data
                         </div>
                         <img
@@ -3053,13 +3615,20 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Shortly after launching, we received M&amp;A interest from several companies, so the website
-                          became the perfect landing page for anyone doing due diligence on our company. Bjorn
-                          transformed a site that confused visitors into one that clearly communicated our value. He was
-                          organized, thoughtful, and technically precise, and the Webflow build was flawless.
+                          Shortly after launching, we received M&amp;A interest
+                          from several companies, so the website became the
+                          perfect landing page for anyone doing due diligence on
+                          our company. Bjorn transformed a site that confused
+                          visitors into one that clearly communicated our value.
+                          He was organized, thoughtful, and technically precise,
+                          and the Webflow build was flawless.
                         </p>
                         <div class="button-testimonial-box">
-                          <a href="quotient-ai.html" target="_blank" class="button secondary w-button">
+                          <a
+                            href="quotient-ai.html"
+                            target="_blank"
+                            class="button secondary w-button"
+                          >
                             View Case Study
                           </a>
                         </div>
@@ -3072,10 +3641,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Julia Neagu
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           CEO and Founder, Quotient AI
                         </div>
                         <img
@@ -3102,12 +3677,18 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          From identity design, to web design and web development: at every stage we worked hand in hand
-                          until we developed an amazing brand and website. Honestly, I have worked with other agencies,
-                          but from this point forward I have ONE stop!
+                          From identity design, to web design and web
+                          development: at every stage we worked hand in hand
+                          until we developed an amazing brand and website.
+                          Honestly, I have worked with other agencies, but from
+                          this point forward I have ONE stop!
                         </p>
                         <div class="button-testimonial-box">
-                          <a href="day-by-day.html" target="_blank" class="button secondary w-button">
+                          <a
+                            href="day-by-day.html"
+                            target="_blank"
+                            class="button secondary w-button"
+                          >
                             View Case Study
                           </a>
                         </div>
@@ -3120,10 +3701,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Irit Levi
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Founder of Day-by-Day
                         </div>
                         <img
@@ -3150,12 +3737,18 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and
-                          the Nordic team translated what we do into a genuine masterpiece! We’ve received so many
-                          compliments from visitors at events.
+                          The rebrand and new website are incredibly impactful
+                          and truly reflect who we are. Bjorn and the Nordic
+                          team translated what we do into a genuine masterpiece!
+                          We’ve received so many compliments from visitors at
+                          events.
                         </p>
                         <div class="button-testimonial-box">
-                          <a href="lumenstream.html" target="_blank" class="button secondary w-button">
+                          <a
+                            href="lumenstream.html"
+                            target="_blank"
+                            class="button secondary w-button"
+                          >
                             View Case Study
                           </a>
                         </div>
@@ -3168,10 +3761,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Stephanie McNeil
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Marketing Manager, LumenStream
                         </div>
                         <img
@@ -3198,12 +3797,19 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Bjorn and his team always exceed all of my expectations and truly capture the essence of what
-                          I need and more. Look no further if you need an amazing website from experts in branding and
-                          design. I'm seeing the results in terms of new clients and great feedback.
+                          Bjorn and his team always exceed all of my
+                          expectations and truly capture the essence of what I
+                          need and more. Look no further if you need an amazing
+                          website from experts in branding and design. I'm
+                          seeing the results in terms of new clients and great
+                          feedback.
                         </p>
-                        <div class="button-testimonial-box w-condition-invisible">
-                          <a href="#" class="button secondary w-button">View Case Study</a>
+                        <div
+                          class="button-testimonial-box w-condition-invisible"
+                        >
+                          <a href="#" class="button secondary w-button"
+                            >View Case Study</a
+                          >
                         </div>
                       </div>
                       <div class="grid grid-testimonial">
@@ -3214,10 +3820,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Dr. Brian M. Harman
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Founder, BMH Accelerator
                         </div>
                         <img
@@ -3244,13 +3856,19 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Our website turned out amazing, and we've seen a significant boost in leads. Throughout the
-                          process, Bjorn is patient, kind, helpful, and easy to communicate with, so working with him
-                          feels natural. If you're looking for a dynamic and attention-getting way to showcase your
-                          product, look no further!
+                          Our website turned out amazing, and we've seen a
+                          significant boost in leads. Throughout the process,
+                          Bjorn is patient, kind, helpful, and easy to
+                          communicate with, so working with him feels natural.
+                          If you're looking for a dynamic and attention-getting
+                          way to showcase your product, look no further!
                         </p>
                         <div class="button-testimonial-box">
-                          <a href="aampe.html" target="_blank" class="button secondary w-button">
+                          <a
+                            href="aampe.html"
+                            target="_blank"
+                            class="button secondary w-button"
+                          >
                             View Case Study
                           </a>
                         </div>
@@ -3263,10 +3881,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Jim Laurain
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Head of Growth at Aampe
                         </div>
                         <img
@@ -3293,13 +3917,19 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Working with Bjorn and his team is always a pleasure. Their skill, passion, and attention to
-                          detail are evident throughout the process, they're extremely thorough, clearly understanding
-                          our business and customers, ultimately helping us build the tools to make a difference in the
-                          world.
+                          Working with Bjorn and his team is always a pleasure.
+                          Their skill, passion, and attention to detail are
+                          evident throughout the process, they're extremely
+                          thorough, clearly understanding our business and
+                          customers, ultimately helping us build the tools to
+                          make a difference in the world.
                         </p>
-                        <div class="button-testimonial-box w-condition-invisible">
-                          <a href="#" class="button secondary w-button">View Case Study</a>
+                        <div
+                          class="button-testimonial-box w-condition-invisible"
+                        >
+                          <a href="#" class="button secondary w-button"
+                            >View Case Study</a
+                          >
                         </div>
                       </div>
                       <div class="grid grid-testimonial">
@@ -3310,10 +3940,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Max Menaged
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Founder of Enviropay
                         </div>
                         <img
@@ -3340,12 +3976,19 @@
                     <div class="testimonial-content">
                       <div class="text-larger margin-bottom margin-s">
                         <p class="testimonial-quote">
-                          Bjorn always rises to the occasion, asks the right questions, and allows me to get the clarity
-                          that I need. He and his team built a brand system that's reflective of our values and designed
-                          a beautiful website, setting the foundation to grow our business the right way.
+                          Bjorn always rises to the occasion, asks the right
+                          questions, and allows me to get the clarity that I
+                          need. He and his team built a brand system that's
+                          reflective of our values and designed a beautiful
+                          website, setting the foundation to grow our business
+                          the right way.
                         </p>
-                        <div class="button-testimonial-box w-condition-invisible">
-                          <a href="#" class="button secondary w-button">View Case Study</a>
+                        <div
+                          class="button-testimonial-box w-condition-invisible"
+                        >
+                          <a href="#" class="button secondary w-button"
+                            >View Case Study</a
+                          >
                         </div>
                       </div>
                       <div class="grid grid-testimonial">
@@ -3356,10 +3999,16 @@
                           loading="lazy"
                           class="testimonial-pic"
                         />
-                        <p id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd" class="testimonial-author">
+                        <p
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f110-2f46f0fd"
+                          class="testimonial-author"
+                        >
                           Konstantinos Kollias
                         </p>
-                        <div id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd" class="testimonial-role">
+                        <div
+                          id="w-node-ca12c7f6-3d25-d571-8d49-ce462f46f111-2f46f0fd"
+                          class="testimonial-role"
+                        >
                           Founder of The Forest Method
                         </div>
                         <img
@@ -3378,7 +4027,10 @@
             <div reveal="fade" class="clients-scroll-mask">
               <div class="clients-scroll">
                 <div class="clients-box w-dyn-list">
-                  <div role="list" class="client-list list-horizontal w-dyn-items">
+                  <div
+                    role="list"
+                    class="client-list list-horizontal w-dyn-items"
+                  >
                     <div role="listitem" class="client-logo w-dyn-item">
                       <img
                         alt="Pacific Rim Marketing Group"
@@ -3478,7 +4130,10 @@
                   </div>
                 </div>
                 <div class="clients-box w-dyn-list">
-                  <div role="list" class="client-list list-horizontal w-dyn-items">
+                  <div
+                    role="list"
+                    class="client-list list-horizontal w-dyn-items"
+                  >
                     <div role="listitem" class="client-logo w-dyn-item">
                       <img
                         alt="Pacific Rim Marketing Group"
@@ -3701,7 +4356,8 @@
                     opacity: 1;
                   }
 
-                  .testimonial-item:hover .testimonial-quote:not(:has(~ .w-condition-invisible)) {
+                  .testimonial-item:hover
+                    .testimonial-quote:not(:has(~ .w-condition-invisible)) {
                     opacity: 0.4;
                   }
                 }
@@ -3715,10 +4371,16 @@
         </section>
         <section id="process" class="section">
           <div class="container z-index-1">
-            <div data-w-id="bd365c62-6652-b321-48c0-bebb82941f7c" class="process-scroll">
+            <div
+              data-w-id="bd365c62-6652-b321-48c0-bebb82941f7c"
+              class="process-scroll"
+            >
               <div class="process-wrap">
                 <div class="process-box">
-                  <div id="w-node-d299267d-3b2c-e188-edf2-38c2158d324a-92f21887" class="process-scene">
+                  <div
+                    id="w-node-d299267d-3b2c-e188-edf2-38c2158d324a-92f21887"
+                    class="process-scene"
+                  >
                     <div class="process-scroll-marks">
                       <div class="process-atmosphere"></div>
                       <div class="process-clouds"></div>
@@ -3776,16 +4438,24 @@
                     Brand Alignment
                   </h4>
                   <div class="process-list list-step1">
-                    <div id="w-node-_2dae957a-cafa-55f3-65a5-553fe3298413-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_2dae957a-cafa-55f3-65a5-553fe3298413-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
                         alt=""
                         class="perk-check"
                       />
-                      <p class="margin-0">Discovery workshop and assets collection</p>
+                      <p class="margin-0">
+                        Discovery workshop and assets collection
+                      </p>
                     </div>
-                    <div id="w-node-_2dae957a-cafa-55f3-65a5-553fe329841b-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_2dae957a-cafa-55f3-65a5-553fe329841b-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3794,7 +4464,10 @@
                       />
                       <p class="margin-0">Validating the visual direction</p>
                     </div>
-                    <div id="w-node-_2dae957a-cafa-55f3-65a5-553fe329841f-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_2dae957a-cafa-55f3-65a5-553fe329841f-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3811,7 +4484,10 @@
                     High-Fidelity Designs
                   </h4>
                   <div class="process-list list-step2">
-                    <div id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e02071642-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e02071642-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3820,16 +4496,24 @@
                       />
                       <p class="margin-0">Custom page designs in Figma</p>
                     </div>
-                    <div id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e02071646-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e02071646-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
                         alt=""
                         class="perk-check"
                       />
-                      <p class="margin-0">Diagrams and product visualizations</p>
+                      <p class="margin-0">
+                        Diagrams and product visualizations
+                      </p>
                     </div>
-                    <div id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e0207164a-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_0332aa5d-7d90-29fc-93bc-5c0e0207164a-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3846,16 +4530,24 @@
                     Web Develoment
                   </h4>
                   <div class="process-list list-step3">
-                    <div id="w-node-_85d8a1f5-0614-de1d-7487-de976c3bbf77-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_85d8a1f5-0614-de1d-7487-de976c3bbf77-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
                         alt=""
                         class="perk-check"
                       />
-                      <p class="margin-0">Development, based on the approved designs</p>
+                      <p class="margin-0">
+                        Development, based on the approved designs
+                      </p>
                     </div>
-                    <div id="w-node-_85d8a1f5-0614-de1d-7487-de976c3bbf7b-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-_85d8a1f5-0614-de1d-7487-de976c3bbf7b-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3871,7 +4563,9 @@
                         alt=""
                         class="perk-check"
                       />
-                      <p class="margin-0">CMS&nbsp;setup, third-party integrations</p>
+                      <p class="margin-0">
+                        CMS&nbsp;setup, third-party integrations
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3881,16 +4575,24 @@
                     Website Delivery
                   </h4>
                   <div class="process-list list-step4">
-                    <div id="w-node-d2a104db-e09a-b76f-3723-17bed5280559-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-d2a104db-e09a-b76f-3723-17bed5280559-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
                         alt=""
                         class="perk-check"
                       />
-                      <p class="margin-0">Performance, accessibility &amp;&nbsp;SEO optimization</p>
+                      <p class="margin-0">
+                        Performance, accessibility &amp;&nbsp;SEO optimization
+                      </p>
                     </div>
-                    <div id="w-node-d2a104db-e09a-b76f-3723-17bed5280561-92f21887" class="flex gap-xxs">
+                    <div
+                      id="w-node-d2a104db-e09a-b76f-3723-17bed5280561-92f21887"
+                      class="flex gap-xxs"
+                    >
                       <img
                         src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6978991edc4f2f4eb71cbe34_glyph-checkmark.svg"
                         loading="eager"
@@ -3914,23 +4616,41 @@
             </div>
           </div>
         </section>
-        <section id="cta" reveal="" class="section section-white padding-v padding-l margin-v margin-l">
+        <section
+          id="cta"
+          reveal=""
+          class="section section-white padding-v padding-l margin-v margin-l"
+        >
           <div class="slots-box">
             <div class="slots-text">
-              Only two slots available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two
-              slots available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two slots
-              available for Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Only two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only
+              two slots available for
+              Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
           </div>
           <div class="grad-bg grad-mid"></div>
@@ -3941,12 +4661,15 @@
                   <h2 reveal="text" class="text-blue">Ready for lift-off</h2>
                 </div>
                 <p reveal="fade" class="text-gray maxw-xl margin-v margin-xs">
-                  Let’s have a 30-minute discovery call to see if there's an opportunity to collaborate and work towards
-                  your goals.
+                  Let’s have a 30-minute discovery call to see if there's an
+                  opportunity to collaborate and work towards your goals.
                 </p>
               </div>
               <div reveal="fade" class="flex">
-                <a href="#" class="button button-avatar button-call w-inline-block">
+                <a
+                  href="#"
+                  class="button button-avatar button-call w-inline-block"
+                >
                   <div>Book a Call with Bjorn</div>
                   <div class="button-img-box">
                     <div class="button-img-caret"></div>
@@ -4044,12 +4767,21 @@
           </div>
         </section>
 
-        <section class="section padding-v padding-xxl" style="padding-top: 4rem; padding-bottom: 4rem">
+        <section
+          class="section padding-v padding-xxl"
+          style="padding-top: 4rem; padding-bottom: 4rem"
+        >
           <div id="blog" class="container">
-            <div id="w-node-_49deee6f-8ef6-6816-1908-5aee2b341186-5c9dd0b5" class="featured-article w-dyn-list">
+            <div
+              id="w-node-_49deee6f-8ef6-6816-1908-5aee2b341186-5c9dd0b5"
+              class="featured-article w-dyn-list"
+            >
               <div role="list" class="w-dyn-items">
                 <div role="listitem" class="w-dyn-item">
-                  <div reveal-load="first" class="grid no-gap-v reset-mobile padding-top padding-m">
+                  <div
+                    reveal-load="first"
+                    class="grid no-gap-v reset-mobile padding-top padding-m"
+                  >
                     <a
                       id="w-node-f6e88215-9cde-c819-d7e8-5120cb76d595-5c9dd0b5"
                       href="mappin-sweden-s-market-pulse.html"
@@ -4071,20 +4803,30 @@
                         />
                       </div>
                     </a>
-                    <div id="w-node-_36993284-4982-18cd-72f5-ed8dfd28a136-5c9dd0b5" class="flex vertical gap-xxs">
+                    <div
+                      id="w-node-_36993284-4982-18cd-72f5-ed8dfd28a136-5c9dd0b5"
+                      class="flex vertical gap-xxs"
+                    >
                       <h5 class="pre-h">FEATURED ARTICLE</h5>
                       <div class="text-small">
-                        <h1 class="feat-blog-title">Data-Driven Dev: Mapping Sweden's Market Pulse ـــﮩ٨ـ</h1>
+                        <h1 class="feat-blog-title">
+                          Data-Driven Dev: Mapping Sweden's Market Pulse ـــﮩ٨ـ
+                        </h1>
                       </div>
                       <div class="text-larger">
                         <p class="feat-blog-summary">
-                          You've found the perfect location for sales, but can't find any converting fresh leads in that
-                          area. Sooo frustrating!
+                          You've found the perfect location for sales, but can't
+                          find any converting fresh leads in that area. Sooo
+                          frustrating!
                         </p>
                       </div>
 
                       <div class="button-group">
-                        <a href="mappin-sweden-s-market-pulse.html" class="button w-button">Keep Reading</a>
+                        <a
+                          href="mappin-sweden-s-market-pulse.html"
+                          class="button w-button"
+                          >Keep Reading</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -4108,7 +4850,10 @@
           </div>
         </section>
 
-        <section class="section margin-bottom margin-l padding-v padding-s" style="padding-bottom: 6rem">
+        <section
+          class="section margin-bottom margin-l padding-v padding-s"
+          style="padding-bottom: 6rem"
+        >
           <div reveal="" class="container">
             <div revtext="" class="text-larger">
               <h3 reveal="text">Latest Articles</h3>
@@ -4121,7 +4866,10 @@
                   role="listitem"
                   class="thumb-item w-dyn-item"
                 >
-                  <a href="building-a-telemarketing-crm.html" class="thumb-item-link w-inline-block">
+                  <a
+                    href="building-a-telemarketing-crm.html"
+                    class="thumb-item-link w-inline-block"
+                  >
                     <div class="thumb-box">
                       <img
                         alt=""
@@ -4139,9 +4887,13 @@
                         />
                       </div>
                     </div>
-                    <h4 class="thumb-h">High‑friction engineering &amp; low‑latency audio streaming</h4>
+                    <h4 class="thumb-h">
+                      High‑friction engineering &amp; low‑latency audio
+                      streaming
+                    </h4>
                     <p class="thumb-p">
-                      Building a Custom Telemarketing CRM with Go, WebRTC, Websockets and Real-time Queues
+                      Building a Custom Telemarketing CRM with Go, WebRTC,
+                      Websockets and Real-time Queues
                     </p>
                   </a>
                 </div>
@@ -4151,7 +4903,10 @@
                   role="listitem"
                   class="thumb-item w-dyn-item"
                 >
-                  <a href="france-breaks-free-from-windows.html" class="thumb-item-link w-inline-block">
+                  <a
+                    href="france-breaks-free-from-windows.html"
+                    class="thumb-item-link w-inline-block"
+                  >
                     <div class="thumb-box">
                       <img
                         alt=""
@@ -4170,8 +4925,13 @@
                         />
                       </div>
                     </div>
-                    <h4 class="thumb-h">France breaks free from MS Windows: Switches to Linux</h4>
-                    <p class="thumb-p">France breaks free from Windows: The rise of a sovereign Linux desktop</p>
+                    <h4 class="thumb-h">
+                      France breaks free from MS Windows: Switches to Linux
+                    </h4>
+                    <p class="thumb-p">
+                      France breaks free from Windows: The rise of a sovereign
+                      Linux desktop
+                    </p>
                   </a>
                 </div>
                 <div
@@ -4180,7 +4940,10 @@
                   role="listitem"
                   class="thumb-item w-dyn-item"
                 >
-                  <a href="cloudflare-collaborating-to-support-open-source.html" class="thumb-item-link w-inline-block">
+                  <a
+                    href="cloudflare-collaborating-to-support-open-source.html"
+                    class="thumb-item-link w-inline-block"
+                  >
                     <div class="thumb-box">
                       <img
                         alt=""
@@ -4199,10 +4962,12 @@
                         />
                       </div>
                     </div>
-                    <h4 class="thumb-h">Cloudflare and Webflow join forces to help Open Source</h4>
+                    <h4 class="thumb-h">
+                      Cloudflare and Webflow join forces to help Open Source
+                    </h4>
                     <p class="thumb-p">
-                      Rebranding is never easy, so how do you know when it's time to turn the page and refresh your
-                      brand?
+                      Rebranding is never easy, so how do you know when it's
+                      time to turn the page and refresh your brand?
                     </p>
                   </a>
                 </div>
@@ -4236,10 +5001,13 @@
                         />
                       </div>
                     </div>
-                    <h4 class="thumb-h">Researchers Discover Critical GitHub Exploit 'Security Flaw'</h4>
+                    <h4 class="thumb-h">
+                      Researchers Discover Critical GitHub Exploit 'Security
+                      Flaw'
+                    </h4>
                     <p class="thumb-p">
-                      Cybersecurity researchers have disclosed details of a critical security vulnerability impacting
-                      GitHub.com
+                      Cybersecurity researchers have disclosed details of a
+                      critical security vulnerability impacting GitHub.com
                     </p>
                   </a>
                 </div>
@@ -4263,17 +5031,29 @@
                   class="white-box-icon margin-0"
                 />
               </div>
-              <h2 reveal="text" id="w-node-f01e34f4-780c-d24f-c253-67b85d371bc4-0a5b5fdc" class="text-blue text-demi">
+              <h2
+                reveal="text"
+                id="w-node-f01e34f4-780c-d24f-c253-67b85d371bc4-0a5b5fdc"
+                class="text-blue text-demi"
+              >
                 Helping challenger brands look like market leaders
               </h2>
-              <div reveal="fade" id="w-node-_65d472d6-ce6d-0e84-6dcc-2910eadeeb9e-0a5b5fdc" class="flex vertical">
+              <div
+                reveal="fade"
+                id="w-node-_65d472d6-ce6d-0e84-6dcc-2910eadeeb9e-0a5b5fdc"
+                class="flex vertical"
+              >
                 <div class="text-larger">
-                  <p>Moving too fast for old-school agencies, but engineering is too busy to work on your website?</p>
+                  <p>
+                    Moving too fast for old-school agencies, but engineering is
+                    too busy to work on your website?
+                  </p>
                 </div>
                 <div class="text-larger">
                   <p>
-                    We take the burden off your team, and deliver a high-end website in weeks, so you can stay focused
-                    on the product roadmap ahead.
+                    We take the burden off your team, and deliver a high-end
+                    website in weeks, so you can stay focused on the product
+                    roadmap ahead.
                   </p>
                 </div>
               </div>
@@ -4288,20 +5068,31 @@
         <section id="faq" class="section padding-v padding-xxl">
           <div class="container">
             <div reveal="" class="grid">
-              <div id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fc4-df3b8fc2" class="sticky">
-                <div id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fc5-df3b8fc2" class="padding-v padding-s text-large">
+              <div
+                id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fc4-df3b8fc2"
+                class="sticky"
+              >
+                <div
+                  id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fc5-df3b8fc2"
+                  class="padding-v padding-s text-large"
+                >
                   <div class="text-large">
                     <h2 reveal="text" class="margin-bottom">FAQ</h2>
                   </div>
                   <p reveal="fade" class="maxw-m">
                     Can’t find your question in this list?
                     <br />
-                    <a href="mailto:epost@ekoll.se" target="_blank">Reach out</a>
+                    <a href="mailto:epost@ekoll.se" target="_blank"
+                      >Reach out</a
+                    >
                     and we'll answer within two working days.
                   </p>
                 </div>
               </div>
-              <div id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fd2-df3b8fc2" class="faqs-box w-dyn-list">
+              <div
+                id="w-node-a1b93393-d7ff-e74d-d2eb-c2fbdf3b8fd2-df3b8fc2"
+                class="faqs-box w-dyn-list"
+              >
                 <div role="list" class="faqs-list w-dyn-items">
                   <div
                     reveal="fade"
@@ -4313,16 +5104,24 @@
                       <h5 ms-code-snippet-q="5" class="faq-question">
                         What kind of companies do you normally work with?
                       </h5>
-                      <div ms-code-snippet-a="5" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="5"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <div class="w-embed">
                           <p>
-                            We typically partner with startups(Seed to Series B) facing a common challenge: they have an
-                            excellent product, but their website is holding them back. What brought them this far no
-                            longer works, and they're ready to align their brand and web presence with their products'
-                            reality and ambitions.
+                            We typically partner with startups(Seed to Series B)
+                            facing a common challenge: they have an excellent
+                            product, but their website is holding them back.
+                            What brought them this far no longer works, and
+                            they're ready to align their brand and web presence
+                            with their products' reality and ambitions.
                             <br />
-                            If you also have a great product that’s outpaced its perception,
-                            <a href="" class="button-call nopadding">let’s have a call</a>
+                            If you also have a great product that’s outpaced its
+                            perception,
+                            <a href="" class="button-call nopadding"
+                              >let’s have a call</a
+                            >
                             and explore how we can fix that.
                           </p>
                         </div>
@@ -4342,11 +5141,18 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="6" class="faq-question">How long does a project take, on average?</h5>
-                      <div ms-code-snippet-a="6" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="6" class="faq-question">
+                        How long does a project take, on average?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="6"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Projects typically run from one to four months. We know startups need to move fast to
-                          capitalize on their advantage, and our process is built to support that speed.
+                          Projects typically run from one to four months. We
+                          know startups need to move fast to capitalize on their
+                          advantage, and our process is built to support that
+                          speed.
                         </p>
                       </div>
                       <img
@@ -4364,14 +5170,23 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="9" class="faq-question">What's the typical price range?</h5>
-                      <div ms-code-snippet-a="9" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="9" class="faq-question">
+                        What's the typical price range?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="9"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <div class="w-embed">
                           <p>
-                            Prices vary depending on the scope of work, but our minimum level of engagement is $4,900.
-                            To get a more accurate estimate,
-                            <a href="#" class="button-call nopadding">reach out</a>
-                            to schedule a call to get a better sense of the scope of work, timeline and budget needed.
+                            Prices vary depending on the scope of work, but our
+                            minimum level of engagement is $4,900. To get a more
+                            accurate estimate,
+                            <a href="#" class="button-call nopadding"
+                              >reach out</a
+                            >
+                            to schedule a call to get a better sense of the
+                            scope of work, timeline and budget needed.
                           </p>
                         </div>
                       </div>
@@ -4390,12 +5205,19 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="18" class="faq-question">What are the payment terms?</h5>
-                      <div ms-code-snippet-a="18" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="18" class="faq-question">
+                        What are the payment terms?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="18"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          The payment terms are typically 50% upfront, and 50% after we launch in impeccable working
-                          condition. For more complex projects, we can split the budget into more than two installments,
-                          depending on the scope of work.
+                          The payment terms are typically 50% upfront, and 50%
+                          after we launch in impeccable working condition. For
+                          more complex projects, we can split the budget into
+                          more than two installments, depending on the scope of
+                          work.
                         </p>
                       </div>
                       <img
@@ -4413,17 +5235,31 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="19" class="faq-question">What happens after we launch the website?</h5>
-                      <div ms-code-snippet-a="19" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="19" class="faq-question">
+                        What happens after we launch the website?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="19"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <div class="w-embed">
                           <p>
-                            We'll be 100% hands on post-launch, making sure everything looks great and works
-                            impeccably.&nbsp;We'll be available for 30 days for any necessary fixes, as part of the
-                            original scope. Within the first week, we will onboard you to the Webflow CMS&nbsp;Editor,
-                            and offer training session so that you and your team can update the new website with ease.
+                            We'll be 100% hands on post-launch, making sure
+                            everything looks great and works
+                            impeccably.&nbsp;We'll be available for 30 days for
+                            any necessary fixes, as part of the original scope.
+                            Within the first week, we will onboard you to the
+                            Webflow CMS&nbsp;Editor, and offer training session
+                            so that you and your team can update the new website
+                            with ease.
                             <br />
-                            And if you'll want to make improvements in the future,
-                            <a href="#" class="button-call nopadding" style="background-color: transparent">
+                            And if you'll want to make improvements in the
+                            future,
+                            <a
+                              href="#"
+                              class="button-call nopadding"
+                              style="background-color: transparent"
+                            >
                               we're just one click away
                             </a>
                             .
@@ -4448,10 +5284,15 @@
                       <h5 ms-code-snippet-q="24" class="faq-question">
                         Will this process be time consuming for me and my team?
                       </h5>
-                      <div ms-code-snippet-a="24" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="24"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Our process requires minimal effort from you and your team. We will need your input mainly
-                          during the initial strategy workshops and during regular check-ins for feedback.
+                          Our process requires minimal effort from you and your
+                          team. We will need your input mainly during the
+                          initial strategy workshops and during regular
+                          check-ins for feedback.
                         </p>
                       </div>
                       <img
@@ -4472,11 +5313,16 @@
                       <h5 ms-code-snippet-q="30" class="faq-question">
                         How do I know that you’ll deliver what we need?
                       </h5>
-                      <div ms-code-snippet-a="30" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="30"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          All the specs and deliverables are clearly outlined in the project proposal. At the end of the
-                          project, before the final payment, we will make sure that everything is in line with the
-                          proposal we agreed upon.
+                          All the specs and deliverables are clearly outlined in
+                          the project proposal. At the end of the project,
+                          before the final payment, we will make sure that
+                          everything is in line with the proposal we agreed
+                          upon.
                         </p>
                       </div>
                       <img
@@ -4495,12 +5341,16 @@
                   >
                     <div class="faq">
                       <h5 ms-code-snippet-q="33" class="faq-question">
-                        Will this integrate with my existing marketing strategies?
+                        Will this integrate with my existing marketing
+                        strategies?
                       </h5>
-                      <div ms-code-snippet-a="33" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="33"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Our solutions work seamlessly with your martech stack, complementing and elevating your
-                          existing workflows.
+                          Our solutions work seamlessly with your martech stack,
+                          complementing and elevating your existing workflows.
                         </p>
                       </div>
                       <img
@@ -4521,11 +5371,16 @@
                       <h5 ms-code-snippet-q="36" class="faq-question">
                         Will my team be able to update content of the website?
                       </h5>
-                      <div ms-code-snippet-a="36" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="36"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Absolutely! Webflow has an excellent CMS Editor, which allows members of your team to make
-                          timely updates safely. At the end of the project you'll receive a dedicated training video, in
-                          which we'll review the Editor and coach your team on how to use it.
+                          Absolutely! Webflow has an excellent CMS Editor, which
+                          allows members of your team to make timely updates
+                          safely. At the end of the project you'll receive a
+                          dedicated training video, in which we'll review the
+                          Editor and coach your team on how to use it.
                         </p>
                       </div>
                       <img
@@ -4546,11 +5401,16 @@
                       <h5 ms-code-snippet-q="38" class="faq-question">
                         Can you help us with brand strategy and positioning?
                       </h5>
-                      <div ms-code-snippet-a="38" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="38"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Yes, we do! We offer strategic support to refine your positioning and develop a comprehensive
-                          Brand Strategy Roadmap. This document serves as a foundation for your future marketing efforts
-                          and is available as an add-on service. Check out our
+                          Yes, we do! We offer strategic support to refine your
+                          positioning and develop a comprehensive Brand Strategy
+                          Roadmap. This document serves as a foundation for your
+                          future marketing efforts and is available as an add-on
+                          service. Check out our
                           <a href="/#work" target="_blank">case studies</a>
                           to learn more.
                         </p>
@@ -4570,13 +5430,23 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="40" class="faq-question">Do you offer brand identity, or logo design?</h5>
-                      <div ms-code-snippet-a="40" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="40" class="faq-question">
+                        Do you offer brand identity, or logo design?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="40"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Absolutely!&nbsp;We can help bring your brand to life with a custom logo and a full identity
-                          system. It’s a great way to make sure your visuals match your strategy, and it's available as
-                          an optional upgrade. To see how we’ve helped other clients transform their brands,
-                          <a href="/#work" target="_blank">check out our case studies</a>
+                          Absolutely!&nbsp;We can help bring your brand to life
+                          with a custom logo and a full identity system. It’s a
+                          great way to make sure your visuals match your
+                          strategy, and it's available as an optional upgrade.
+                          To see how we’ve helped other clients transform their
+                          brands,
+                          <a href="/#work" target="_blank"
+                            >check out our case studies</a
+                          >
                           .
                         </p>
                       </div>
@@ -4596,12 +5466,16 @@
                   >
                     <div class="faq">
                       <h5 ms-code-snippet-q="48" class="faq-question">
-                        Can you migrate my website from WordPress, Wix or Squarespace?
+                        Can you migrate my website from WordPress, Wix or
+                        Squarespace?
                       </h5>
-                      <div ms-code-snippet-a="48" class="faq-answer padding-xs padding-left w-richtext">
+                      <div
+                        ms-code-snippet-a="48"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <p>
-                          Yes, we can make that transition. We'll maintain your URL structure intact, to preserve
-                          traffic and ranking.
+                          Yes, we can make that transition. We'll maintain your
+                          URL structure intact, to preserve traffic and ranking.
                         </p>
                       </div>
                       <img
@@ -4619,14 +5493,22 @@
                     class="faq-item w-dyn-item"
                   >
                     <div class="faq">
-                      <h5 ms-code-snippet-q="60" class="faq-question">How do we get started?</h5>
-                      <div ms-code-snippet-a="60" class="faq-answer padding-xs padding-left w-richtext">
+                      <h5 ms-code-snippet-q="60" class="faq-question">
+                        How do we get started?
+                      </h5>
+                      <div
+                        ms-code-snippet-a="60"
+                        class="faq-answer padding-xs padding-left w-richtext"
+                      >
                         <div class="w-embed">
                           <p>
                             Please
-                            <a href="#" class="text-demi button-call nopadding">pick a time that works for you</a>
-                            for our discovery call. We'll discuss your product, goals, and challenges, and see if
-                            there's an opportunity to work together.
+                            <a href="#" class="text-demi button-call nopadding"
+                              >pick a time that works for you</a
+                            >
+                            for our discovery call. We'll discuss your product,
+                            goals, and challenges, and see if there's an
+                            opportunity to work together.
                           </p>
                         </div>
                       </div>
@@ -4643,140 +5525,22 @@
             </div>
           </div>
           <div class="page-css w-embed">
-            <style>
-              .faq-item:hover .faq-question {
-                color: var(--color--white) !important;
-              }
-
-              .faq-item:hover .arrow-faq {
-                transform: translate(0, 0);
-              }
-
-              .faq-item:hover .faq-answer {
-                color: var(--color--light-chalk);
-              }
-
-              @media (orientation: portrait) and (max-width: 767px) {
-                section#faq {
-                  padding: var(--size--xl) 0 !important;
-                }
-              }
-
-              .footer-logo {
-                position: absolute;
-                width: 12rem;
-              }
-
-              .Layer_1 {
-                opacity: 0.2;
-                bottom: 2rem;
-              }
-
-              .footer-logo {
-                bottom: 2rem;
-              }
-
-              .footer-link {
-                padding: 5px;
-              }
-
-              .footer-buttons {
-                margin: 0 !important;
-              }
-
-              .footer-flex {
-                justify-self: unset;
-                display: flex;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                flex-wrap: nowrap;
-              }
-
-              .footer-flex-item.footer-flags {
-                gap: 10px;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: center;
-                width: auto;
-                max-width: none;
-                white-space: nowrap;
-                flex: 0 0 auto;
-              }
-
-              .footer-flex-item.footer-flags .footer-btn-flag {
-                flex: 0 0 36px;
-              }
-
-              @media (min-width: 992px) {
-                .footer-flex {
-                  flex-wrap: nowrap !important;
-                }
-
-                .footer-flex-item.footer-logo-btn {
-                  order: 1;
-                }
-
-                .footer-flex > .footer-btn-link {
-                  order: 2;
-                }
-
-                .footer-flex-item.footer-flags {
-                  order: 3;
-                }
-              }
-
-              @media (max-width: 991px) {
-                .footer-links {
-                  width: 100% !important;
-                  max-width: 100%;
-                  padding: 1rem 0 !important;
-                }
-
-                .footer-flex {
-                  flex-wrap: wrap !important;
-                  row-gap: 10px;
-                }
-
-                .footer-flex > .footer-btn-link {
-                  order: 1;
-                  width: 100%;
-                  display: flex;
-                  justify-content: center;
-                }
-
-                .footer-flex-item.footer-flags {
-                  order: 2;
-                  width: 100%;
-                  justify-content: center;
-                  overflow-x: auto;
-                  overflow-y: hidden;
-                  -webkit-overflow-scrolling: touch;
-                  scrollbar-width: none;
-                  padding-bottom: 2px;
-                }
-
-                .footer-flex-item.footer-flags::-webkit-scrollbar {
-                  display: none;
-                }
-
-                .footer-flex-item.footer-logo-btn {
-                  order: 3;
-                  width: 100%;
-                  display: flex;
-                  justify-content: center;
-                }
-              }
-            </style>
+            <style></style>
           </div>
         </section>
       </main>
     </div>
-    <footer data-w-id="dcbf104b-70a1-e436-fdd1-423371bec374" class="footer" style="padding: 2rem">
+    <footer
+      data-w-id="dcbf104b-70a1-e436-fdd1-423371bec374"
+      class="footer"
+      style="padding: 2rem"
+    >
       <div class="container pos-rel">
         <div class="footer-grid">
-          <div id="w-node-_838794ff-e1c2-a27d-3312-9057e764b090-71bec374" class="brand brand-footer">
+          <div
+            id="w-node-_838794ff-e1c2-a27d-3312-9057e764b090-71bec374"
+            class="brand brand-footer"
+          >
             <img
               src="icons/ssl.webp"
               style="width: 48px"
@@ -4804,23 +5568,45 @@
           </div>
           <div
             id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374"
-            class="footer-links"
-            style="padding: 2rem; width: 100%; margin-left: 0px; max-width: 555px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"
+            class="footer-links footer-nav-links"
           >
-            <a style="margin:5px;" href="#main" aria-current="page"  class="footer-link  w--current">HOME</a>
-            <a style="margin:5px;" href="about.html" class="footer-link">ABOUT</a>
-            <a style="margin:5px;" href="blog.html" class="footer-link">BLOG</a>
-            <a style="margin:5px;" href="privacy-policy.html" class="footer-link">PRIVACY</a>
-            <a style="margin:5px;" href="contact.html" class="footer-link">CONTACT</a>
+            <a
+              style="margin: 5px"
+              href="#main"
+              aria-current="page"
+              class="footer-link w--current"
+              >HOME</a
+            >
+            <a style="margin: 5px" href="about.html" class="footer-link"
+              >ABOUT</a
+            >
+            <a style="margin: 5px" href="blog.html" class="footer-link">BLOG</a>
+            <a
+              style="margin: 5px"
+              href="privacy-policy.html"
+              class="footer-link"
+              >PRIVACY</a
+            >
+            <a style="margin: 5px" href="contact.html" class="footer-link"
+              >CONTACT</a
+            >
           </div>
-          <div style="margin: 0px" id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374" class="footer-buttons">
-            <div class="footer-flex" style="justify-self: unset; display: flex; width: 100%; justify-content: center; gap: 10px;">
+          <div
+            id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374"
+            class="footer-buttons"
+          >
+            <div class="footer-flex footer-flex-root">
               <div class="footer-flex-item footer-logo-btn">
                 <a
                   id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
                   href="index.html"
-                  class="footer-btn-box w-inline-block footer-btn-link"
-                  style="max-width: 180px; padding: 0px 10px 0px 10px; max-height: 36px; min-height: 36px"
+                  class="footer-btn-box w-inline-block footer-btn-link nordic-button"
+                  style="
+                    max-width: 180px;
+                    padding: 0px 10px 0px 10px;
+                    max-height: 36px;
+                    min-height: 36px;
+                  "
                 >
                   <img
                     style="height: 36px; margin-left: 24px; width: 36px"
@@ -4830,7 +5616,13 @@
                     class="logo-icon"
                   />
                   <img
-                    style="width: 140px; height: 32px; position: relative; left: -28px; top: -1px"
+                    style="
+                      width: 140px;
+                      height: 32px;
+                      position: relative;
+                      left: -28px;
+                      top: -1px;
+                    "
                     src="https://nordicdigitalthailand.com/icons/logotype.svg"
                     loading="eager"
                     alt="nordicdigitalthailand.com Logo"
@@ -4838,38 +5630,54 @@
                   />
                 </a>
               </div>
-                <a
-                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="
-                    max-width: 180px;
-                    min-width: 128px;
-                    padding: 0px 20px 0px 20px;
-                    min-height: 36px;
-                    max-height: 36px;
-                  "
-                  href="about.html"
-                  class="footer-btn-box btn-social w-inline-block footer-btn-link"
-                >
-                  <img
-                    style="height: 16px"
-                    src="https://nordicdigitalthailand.com/icons/magent.svg"
-                    loading="lazy"
-                    alt="nordicdigitalthailand.com logo, white option, svg icon"
-                    class="logo-mentor"
-                  />
-                </a>
+              <a
+                id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                style="
+                  max-width: 180px;
+                  min-width: 128px;
+                  padding: 0px 20px 0px 20px;
+                  min-height: 36px;
+                  max-height: 36px;
+                "
+                href="about.html"
+                class="footer-btn-box btn-social w-inline-block footer-btn-link mentor-button"
+              >
+                <img
+                  style="height: 16px"
+                  src="https://nordicdigitalthailand.com/icons/magent.svg"
+                  loading="lazy"
+                  alt="nordicdigitalthailand.com logo, white option, svg icon"
+                  class="logo-mentor"
+                />
+              </a>
               <div
                 class="footer-flex-item footer-flags"
-                style="gap: 10px; display: flex; flex-wrap: nowrap; justify-content: center;"
+                style="
+                  gap: 10px;
+                  display: flex;
+                  flex-wrap: nowrap;
+                  justify-content: center;
+                "
               >
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -4881,18 +5689,32 @@
                         fill="#0052b4"
                         d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z"
                       ></path>
-                      <path fill="#ffda44" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"></path>
+                      <path
+                        fill="#ffda44"
+                        d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"
+                      ></path>
                     </g>
                   </svg>
                 </a>
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -4904,18 +5726,32 @@
                         fill="#d80027"
                         d="M0 0h133.6l32.7 20.3 34-20.3H512v222.6L491.4 256l20.6 33.4V512H200.3l-31.7-20.4-35 20.4H0V289.4l29.4-33L0 222.7z"
                       ></path>
-                      <path fill="#eee" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0h-66.7z"></path>
+                      <path
+                        fill="#eee"
+                        d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0h-66.7z"
+                      ></path>
                     </g>
                   </svg>
                 </a>
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -4931,18 +5767,32 @@
                         fill="#eee"
                         d="M100.2 0v189.3H0v33.4l24.6 33L0 289.5v33.4h100.2V512h33.4l30.6-26.3 36.1 26.3h33.4V322.8H512v-33.4l-24.6-33.7 24.6-33v-33.4H233.7V0h-33.4l-33.8 25.3L133.6 0z"
                       ></path>
-                      <path fill="#0052b4" d="M133.6 0v222.7H0v66.7h133.6V512h66.7V289.4H512v-66.7H200.3V0z"></path>
+                      <path
+                        fill="#0052b4"
+                        d="M133.6 0v222.7H0v66.7h133.6V512h66.7V289.4H512v-66.7H200.3V0z"
+                      ></path>
                     </g>
                   </svg>
                 </a>
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -4954,18 +5804,32 @@
                         fill="#eee"
                         d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z"
                       ></path>
-                      <path fill="#0052b4" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"></path>
+                      <path
+                        fill="#0052b4"
+                        d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"
+                      ></path>
                     </g>
                   </svg>
                 </a>
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -4973,20 +5837,37 @@
                       <circle cx="256" cy="256" r="256" fill="#fff"></circle>
                     </mask>
                     <g mask="url(#a)">
-                      <path fill="#d80027" d="M0 0h512v89l-79.2 163.7L512 423v89H0v-89l82.7-169.6L0 89z"></path>
-                      <path fill="#eee" d="M0 89h512v78l-42.6 91.2L512 345v78H0v-78l40-92.5L0 167z"></path>
+                      <path
+                        fill="#d80027"
+                        d="M0 0h512v89l-79.2 163.7L512 423v89H0v-89l82.7-169.6L0 89z"
+                      ></path>
+                      <path
+                        fill="#eee"
+                        d="M0 89h512v78l-42.6 91.2L512 345v78H0v-78l40-92.5L0 167z"
+                      ></path>
                       <path fill="#0052b4" d="M0 167h512v178H0z"></path>
                     </g>
                   </svg>
                 </a>
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  style="
+                    width: 36px !important;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2px;
+                  "
                   href="index.html"
                   class="footer-btn-flag footer-btn-box btn-social w-inline-block"
                 >
                   <svg
-                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    style="
+                      width: 18px;
+                      height: 18px;
+                      margin: 6px;
+                      position: absolute;
+                    "
                     height="18px"
                     width="18px"
                     version="1.1"
@@ -4996,7 +5877,12 @@
                     viewBox="0 0 512 512"
                     xml:space="preserve"
                   >
-                    <circle style="fill: #f0f0f0" cx="256" cy="256" r="256"></circle>
+                    <circle
+                      style="fill: #f0f0f0"
+                      cx="256"
+                      cy="256"
+                      r="256"
+                    ></circle>
                     <g>
                       <path
                         style="fill: #d80027"
@@ -5052,8 +5938,18 @@
         </span>
       </p>
       <div class="button-group full-width margin-top margin-xxs">
-        <a href="#" data-w-id="d5eac6a6-ea2a-ceb6-b3f2-44561c9fea40" class="button gdpr w-button">Sounds Good</a>
-        <a href="/privacy-policy#cookies" target="_blank" class="button secondary w-button">Cookie&nbsp;Policy</a>
+        <a
+          href="#"
+          data-w-id="d5eac6a6-ea2a-ceb6-b3f2-44561c9fea40"
+          class="button gdpr w-button"
+          >Sounds Good</a
+        >
+        <a
+          href="/privacy-policy#cookies"
+          target="_blank"
+          class="button secondary w-button"
+          >Cookie&nbsp;Policy</a
+        >
       </div>
     </div>
     <div class="modal-wrapper modal-call">
@@ -5096,7 +5992,12 @@
       />
       <div class="container container-nav">
         <div class="brand brand-modal" style="margin-top: 1.25rem">
-          <img src="icons/m1.svg" loading="eager" alt="NordicDigitalThailand.com" class="logo-img" />
+          <img
+            src="icons/m1.svg"
+            loading="eager"
+            alt="NordicDigitalThailand.com"
+            class="logo-img"
+          />
         </div>
       </div>
       <div class="modal-content content-contact">
@@ -5108,8 +6009,10 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      Bjorn transformed a site that confused visitors into one that clearly communicated our value. The
-                      build was flawless, and we received M&amp;A interest shortly after the launch.
+                      Bjorn transformed a site that confused visitors into one
+                      that clearly communicated our value. The build was
+                      flawless, and we received M&amp;A interest shortly after
+                      the launch.
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5120,7 +6023,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Julia Neagu</p>
-                        <p class="testimonial-role">CEO and Founder, Quotient AI</p>
+                        <p class="testimonial-role">
+                          CEO and Founder, Quotient AI
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5128,8 +6033,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his
-                      team translated what we do into a genuine masterpiece!
+                      The rebrand and new website are incredibly impactful and
+                      truly reflect who we are. Bjorn and his team translated
+                      what we do into a genuine masterpiece!
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5140,7 +6046,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Stephanie McNeil</p>
-                        <p class="testimonial-role">Marketing Manager, LumenStream</p>
+                        <p class="testimonial-role">
+                          Marketing Manager, LumenStream
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5148,8 +6056,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to
-                      build a cohesive brand system and website for our technical product.
+                      Bjorn had a clear vision, and was extremely proactive from
+                      day one, going above and beyond to build a cohesive brand
+                      system and website for our technical product.
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5160,7 +6069,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Carol Lu-Vernooij</p>
-                        <p class="testimonial-role">Head of Marketing, Tobiko Data</p>
+                        <p class="testimonial-role">
+                          Head of Marketing, Tobiko Data
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5168,8 +6079,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      The website turned out amazing, and we've seen a significant boost in leads. If you're looking for
-                      a dynamic way to showcase your product, look no further!
+                      The website turned out amazing, and we've seen a
+                      significant boost in leads. If you're looking for a
+                      dynamic way to showcase your product, look no further!
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5192,8 +6104,10 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      Bjorn transformed a site that confused visitors into one that clearly communicated our value. The
-                      build was flawless, and we received M&amp;A interest shortly after the launch.
+                      Bjorn transformed a site that confused visitors into one
+                      that clearly communicated our value. The build was
+                      flawless, and we received M&amp;A interest shortly after
+                      the launch.
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5204,7 +6118,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Julia Neagu</p>
-                        <p class="testimonial-role">CEO and Founder, Quotient AI</p>
+                        <p class="testimonial-role">
+                          CEO and Founder, Quotient AI
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5212,8 +6128,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his
-                      team translated what we do into a genuine masterpiece!
+                      The rebrand and new website are incredibly impactful and
+                      truly reflect who we are. Bjorn and his team translated
+                      what we do into a genuine masterpiece!
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5224,7 +6141,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Stephanie McNeil</p>
-                        <p class="testimonial-role">Marketing Manager, LumenStream</p>
+                        <p class="testimonial-role">
+                          Marketing Manager, LumenStream
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5232,8 +6151,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to
-                      build a cohesive brand system and website for our technical product.
+                      Bjorn had a clear vision, and was extremely proactive from
+                      day one, going above and beyond to build a cohesive brand
+                      system and website for our technical product.
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5244,7 +6164,9 @@
                       />
                       <div class="flex vertical text-smaller">
                         <p class="testimonial-author">Carol Lu-Vernooij</p>
-                        <p class="testimonial-role">Head of Marketing, Tobiko Data</p>
+                        <p class="testimonial-role">
+                          Head of Marketing, Tobiko Data
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -5252,8 +6174,9 @@
                 <div role="listitem" class="modal-testimonial w-dyn-item">
                   <div class="testimonial-content modal-testimonial-content">
                     <p class="testimonial-quote modal-testimonial-quote">
-                      The website turned out amazing, and we've seen a significant boost in leads. If you're looking for
-                      a dynamic way to showcase your product, look no further!
+                      The website turned out amazing, and we've seen a
+                      significant boost in leads. If you're looking for a
+                      dynamic way to showcase your product, look no further!
                     </p>
                     <div class="flex mid-aligned gap-xs">
                       <img
@@ -5274,7 +6197,10 @@
           </div>
         </div>
         <div class="container container-testimonial">
-          <div id="w-node-_5a950fae-b81e-6693-c7a1-91aeafdcd16d-d1d5dde6" class="calendly-box">
+          <div
+            id="w-node-_5a950fae-b81e-6693-c7a1-91aeafdcd16d-d1d5dde6"
+            class="calendly-box"
+          >
             <div class="calendly-container w-embed w-script">
               <!-- Calendly inline widget begin -->
               <div
@@ -5348,9 +6274,21 @@
           }
 
           .modals-testimonials-mask {
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              black 20%,
+              black 80%,
+              transparent 100%
+            );
 
-            mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+            mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              black 20%,
+              black 80%,
+              transparent 100%
+            );
           }
 
           @media (orientation: landscape) and (max-height: 800px) {
@@ -5385,9 +6323,18 @@
       integrity="sha384-CBKzxR0L4KCxBbyks5i2YzJvz1yJAVCGWLUMbg705DqX9sMdiNQVoSUqftiE+iH8"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
-    <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
-    <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+    <script
+      src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js"
+      type="text/javascript"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -5423,7 +6370,10 @@
         const deltaMouseY = mouse.y - previousMouse.y;
         previousMouse.x = mouse.x;
         previousMouse.y = mouse.y;
-        const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 10, 150);
+        const mouseVelocity = Math.min(
+          Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 10,
+          150,
+        );
         const scaleValue = (mouseVelocity / 150) * 0.5;
         currentScale += (scaleValue - currentScale) * speed;
         const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
@@ -5463,7 +6413,9 @@
         const SPEED = 2;
 
         function mapRange(value, inMin, inMax, outMin, outMax) {
-          return outMin + ((value - inMin) * (outMax - outMin)) / (inMax - inMin);
+          return (
+            outMin + ((value - inMin) * (outMax - outMin)) / (inMax - inMin)
+          );
         }
 
         container.innerHTML = "";
@@ -5499,7 +6451,10 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script>
       const swiper = new Swiper(".swiper-testimonials", {
         // Optional parameters
