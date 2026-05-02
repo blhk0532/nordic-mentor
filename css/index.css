@@ -2526,7 +2526,7 @@ blockquote  {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.25;
 }
 
@@ -10611,9 +10611,6 @@ select option  {
   min-width: 33.33%;
 }
 
-.hero-h  {
-  font-size: 6.15em;
-}
 
 @media (orientation: portrait) and (max-width: 991px)  {
   .hero-h  {

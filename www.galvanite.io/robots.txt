@@ -1,0 +1,122 @@
+# =============================================
+# robots.txt — galvanite.io
+# Last updated: April 2026
+# =============================================
+
+# Default: allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://galvanite.io/sitemap.xml
+
+
+# --- OpenAI ---
+
+# Training crawler
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT search results
+User-agent: OAI-SearchBot
+Allow: /
+
+# User-initiated browsing in ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+
+# --- Anthropic (Claude) ---
+
+# Training crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Search and retrieval
+User-agent: Claude-SearchBot
+Allow: /
+
+# User-initiated fetching
+User-agent: Claude-User
+Allow: /
+
+# Legacy (deprecated but still seen in logs)
+User-agent: anthropic-ai
+Allow: /
+
+
+# --- Google AI ---
+
+# AI training opt-in
+User-agent: Google-Extended
+Allow: /
+
+# Vertex AI
+User-agent: Google-CloudVertexBot
+Allow: /
+
+
+# --- Perplexity ---
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+
+# --- Apple ---
+
+# Apple AI training
+User-agent: Applebot-Extended
+Allow: /
+
+
+# --- Meta ---
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+
+# --- Amazon ---
+
+User-agent: Amazonbot
+Allow: /
+
+
+# --- Common Crawl ---
+
+User-agent: CCBot
+Allow: /
+
+
+# --- Microsoft ---
+
+User-agent: bingbot
+Allow: /
+
+
+# --- Others ---
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: ExaBot
+Allow: /
+
+Sitemap: https://www.galvanite.io/sitemap.xml

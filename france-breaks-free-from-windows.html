@@ -701,6 +701,99 @@
           flex-direction: column;
         }
       }
+              .about-buttons .social-icon,
+        .about-buttons .partner-img {
+          color: var(--color-white);
+        }
+
+        .about-buttons .footer-btn-box {
+          background-color: var(--color--royal-blue);
+          border-color: var(--color--royal-blue);
+        }
+
+        .about-buttons .footer-btn-box:hover {
+          background-color: var(--color--white);
+          border-color: var(--color--white);
+        }
+
+        .about-buttons .footer-btn-box:hover .social-icon,
+        .about-buttons .footer-btn-box:hover .partner-img {
+          color: var(--color--royal-blue);
+        }
+
+        .footer-flags-flex {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+        }
+
+        .footer-flags {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+
+        .footer-flex {
+          --footer-flex-gap: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: var(--footer-flex-gap);
+          flex-wrap: wrap;
+        }
+
+        .footer-flex-item {
+          margin: 12px 0;
+          padding: 0;
+          display: flex;
+          flex: 0 0 auto;
+          width: auto;
+          max-width: max-content;
+        }
+
+        .footer-flex .footer-btn-box {
+          margin: 0 !important;
+          box-sizing: border-box;
+          min-width: 0 !important;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          width: auto;
+        }
+
+        @media (max-width: 1100px) {
+          .footer-buttons {
+            grid-column: 1 / -1;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 760px) {
+          .footer-flex {
+            justify-content: center;
+          }
+
+          .block-mobile {
+            display: none;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .footer-flex {
+            gap: 10px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .footer-flags-flex {
+            flex-direction: column;
+          }
+        }
+
+        iframe {
+          margin-top: -72px;
+        }
     </style>
   </div>
   <div class="page-bg">
@@ -737,128 +830,286 @@
   <div data-w-id="effa2a64-b986-9755-674d-3d6bdcbb77fb" data-animation="over-right" data-collapse="medium"
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="nav-bg"></div>
-    <div class="nav-container">
-      <a href="index.html" class="brand w-nav-brand">
-        <svg style="width: 156px; height: 28px;" fill="#ffffff" version="1.2" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1832 328" width="1832" height="328">
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m1167.5 7.5q39 0 78 0 0.25 104-0.5 208-7.73 69.72-72.5 96.5-81.51 23.59-131.5-44.5-35.41-60.78 1-121 47.62-63.63 125.5-45 0-47 0-94zm-73 200q4.85 39.91 45 39.5 31.97-6.41 35-39-5.71-41.96-48-39.5-29.03 8.55-32 39z" />
-          </g>
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m574.5 97.5q73.88-5.44 112.5 57 31.23 64.88-11 123-49.57 55.58-121.5 35.5-62.5-23.77-74.5-89.5-6.8-72.15 53.5-111.5 19.47-10.74 41-14.5zm-10 79.5q-23.59 23.82-7.5 53.5 21.72 25.85 52.5 11.5 20.62-12.99 19.5-37.5-7.55-39.17-47.5-36-9.15 2.65-17 8.5z" />
-          </g>
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m1542.5 97.5q54.97-5.93 94 32.5-24.5 24.5-49 49-1.5 1-3 0-19.76-16.75-44-7-27.69 16.05-20.5 47.5 15.61 36.43 53.5 24.5 7.07-3.08 12.5-8.5 25.25 25.25 50.5 50.5-54.66 49.83-124 23-54.24-26.7-64.5-86.5-5.65-83.98 70.5-118.5 12.06-3.76 24-6.5z" />
-          </g>
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m300.5 102.5q59 0 118 0 0 105 0 210-42 0-84 0 0-63 0-126-27 0-54 0 0 63 0 126-43 0-86 0-0.25-52 0.5-104 53.05-52.8 105.5-106z" />
-          </g>
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m863.5 102.5q50 0 100 0 0 42 0 84-60 0-120 0 0 63 0 126-43 0-86 0-0.25-52 0.5-104 53.05-52.8 105.5-106z" />
-          </g>
-          <g>
-            <path fill-rule="evenodd" fill="currentColor" class="s0"
-              d="m1304.5 102.5q42 0 84 0 0 105 0 210-42 0-84 0 0-105 0-210z" />
-          </g>
-        </svg>
-      </a>      <nav role="navigation" class="nav-menu-box w-nav-menu">
-        <div class="nav-links">
-          <a href="index.html#main" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
-          <a href="index.html#about" class="nav-link w-nav-link">About</a>
-           <a href="index.html#featured" class="nav-link w-nav-link">Featured</a>
-          <a href="index.html#blog-image" class="nav-link w-nav-link">Articles</a>
+          <div class="nav-container">
+        <a href="index.html" class="brand w-nav-brand" style="margin-top: 0rem;z-index:1000;position: absolute;  top: 23px;  left: 24px;">
+<svg id="m30" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681 159" width="130" height="30">
+	<style>
+        .brand.w-nav-brand {
+          color: #fff !important;
+        }
 
+        .brand.w-nav-brand svg {
+          display: block;
+        }
 
-          <div data-hover="false" data-delay="200" data-w-id="effa2a64-b986-9755-674d-3d6bdcbb7809"
-            class="nav-link-box w-dropdown">
-            <div class="nav-link w-dropdown-toggle">
-              <div>Case Studies</div>
-              <div class="dropdown-icon w-embed">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </div>
-            </div>
-            <nav class="mega-menu-box w-dropdown-list">
-              <div class="mega-menu w-dyn-list">
-                <div role="list" class="container container-megamenu w-dyn-items">
-                  <div role="listitem" class="mega-item w-dyn-item">
-                    <a href="tobiko.html" class="mega-item-link w-inline-block">
-                      <div class="mega-img-box">
-                        <img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6900c8111bba0a5d540e0309_thumbnail.avif"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">Tobiko</p>
-                      </div>
-                      <div class="mega-item-title">How the Tobiko rebrand primed a niche data startup for rapid growth
-                        &amp; acquisition</div>
-                    </a>
-                  </div>
-                  <div role="listitem" class="mega-item w-dyn-item"><a href="quotient-ai.html"
-                      class="mega-item-link w-inline-block">
-                      <div class="mega-img-box"><img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bc242d7d5d611e95cd82f5_thumbnail.avif"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">Quotient AI</p>
-                      </div>
-                      <div class="mega-item-title">Quotient AI: From rebrand to successful exit in under two months
-                      </div>
-                    </a></div>
-                  <div role="listitem" class="mega-item w-dyn-item"><a href="aampe.html"
-                      class="mega-item-link w-inline-block">
-                      <div class="mega-img-box"><img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1fd_thumbnail-aampe.webp"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">Aampe</p>
-                      </div>
-                      <div class="mega-item-title">How we made Aampe&#x27;s agentic superpowers shine</div>
-                    </a></div>
-                  <div role="listitem" class="mega-item w-dyn-item"><a href="lumenstream.html"
-                      class="mega-item-link w-inline-block">
-                      <div class="mega-img-box">
-                        <img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/693051a262aaac1ca922aef0_thumbnail.jpg"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">LumenStream</p>
-                      </div>
-                      <div class="mega-item-title">Lighting the way: Building trust around an innovative business model
-                      </div>
-                    </a></div>
-                  <div role="listitem" class="mega-item w-dyn-item"><a href="start2coin.html"
-                      class="mega-item-link w-inline-block">
-                      <div class="mega-img-box"><img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd20f_thumbnail-s2c.webp"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">Start2Coin</p>
-                      </div>
-                      <div class="mega-item-title">Making cryptos easily accessible to the Everyman</div>
-                    </a></div>
-                  <div role="listitem" class="mega-item w-dyn-item"><a href="day-by-day.html"
-                      class="mega-item-link w-inline-block">
-                      <div class="mega-img-box"><img
-                          src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1ed_thumbnail-dbd.webp"
-                          alt="" class="mega-item-img" />
-                        <p class="mega-item-name">Day by Day</p>
-                      </div>
-                      <div class="mega-item-title">Unlocking growth through strategic brand development</div>
-                    </a>
-                  </div>
+        .brand.w-nav-brand.w--current {
+          pointer-events: auto;
+        }
+        .brand.w-nav-brand #m30 .s0,
+        .brand.w-nav-brand #m30 .s1,
+        .brand.w-nav-brand #m32 .s0,
+        .brand.w-nav-brand #m32 .s1 {
+          fill: currentColor !important;
+          transition: fill 0.3s ease;
+        }
+
+        .brand.w-nav-brand:hover {
+          color: #ffd400 !important;
+        }
+                .nav-link:hover {
+          color: #ffd400 !important;
+        }
+        .footer-btn-link:hover {
+          background: #145086 !important;
+          border-color:#ffd400 !important;
+        }
+        .footer-link:hover {
+          color: #ffd400 !important;
+        }
+        .footer-btn-flag:hover {
+ 
+          border-color:#ffd400 !important;
+        }
+	</style>
+	<path class="s0" d="m10.55 9c1.66 0.09 3.45 0.11 5.12 0.16 2.08 1.24 6.31 5.74 8.2 7.64l12 12.07 46.73 46.76c15.95-15.31 32.22-32.21 47.96-47.93l11.55-11.63c1.91-1.92 5.24-5.42 7.28-6.89 1.67-0.07 3.42-0.05 5.1-0.05 0.33 4.81 0.12 11.99 0.12 16.98l-0.01 31.11 0.01 96.07q-4.01-0.03-8.02-0.01c-0.18-7.79-0.32-15.61-0.34-23.39-0.01-0.63-0.44-0.79-0.88-1.11-1.15 0.06-0.78-0.13-1.51 0.57-0.49 6.63-0.14 17.05-0.12 23.95l-5.18-0.03-0.12-6.48c-0.61-10.29-0.27-26.51-0.17-37.05l-2.61 0.07c0.23 14.45-0.06 29.13 0.26 43.51l-4.94-0.1c-0.2-10.14 0-20.38 0.02-30.53 0-0.74-0.14-1.35-0.59-1.94-1.03-0.14-1.13-0.18-2.12 0.06-0.43 0.83-0.25 28.99-0.24 32.49l-9.09-0.04c-0.3-6.83-0.12-14.57-0.12-21.46l-0.07-42.11c-12.15 11.6-24.4 24.53-36.33 36.51-16.65-17.01-33.87-33.68-50.58-50.64-7.06-7.15-14.57-14.31-21.46-21.58-0.48-4.03-0.63-42.16 0.15-44.98z"/>
+	<path class="s0" d="m10.73 71.06c1 0.51 2.95 2.59 3.82 3.48 10.53 10.7 21.43 21.14 31.83 31.95 0.27 5.13 0.1 11.65 0.1 16.86l-0.01 29.9-35.7 0.01c-0.27-9.59-0.07-20.12-0.07-29.77z"/>
+	<g id="layer1">
+		<g id="g2571">
+			<path id="path2459" class="s1" d="m497.62 72.58c-2.65 4.64-6.2 8.62-7.08 13.93-2.43 10.61 1.33 21.67 9.06 29.18 7.08 7.08 16.81 9.29 26.76 7.74 9.5-2.21 19.45-10.39 22.33-19.9 4.2-12.6 0.44-25.87-9.07-34.49-6.19-5.3-13.7-8.01-21.66-8.45h-69.68v91.8h-36.44v-144.91h36.44v23.54h79.4c22.28 0 42.23 16.8 50.85 38.02 9.73 20.79 5.09 47.98-10.61 64.56-16.58 18.35-39.79 25.42-63.45 19.89-21.67-6.18-44-26.3-46.43-49.96-1.77-11.05 0-21.88 4.64-30.95z"/>
+			<path id="path2463" class="s1" d="m392.5 40.86c9.62 10.7 10.66 24.65 10.66 38.35v73.18h-33.66v-45.54c0-17.25-2.98-39.24-12.27-44-9.28-4.75-15.47-2.43-21.88 0.89-5.75 3.54-9.73 8.73-9.73 15.26v52.39h-33.88v-100.26h32.77c0 3.94 1.32 7.99 2.21 11.39 6.19-4.2 11.28-9.95 18.35-12.61 15.7-5.3 35.48-2.31 47.43 10.95z"/>
+			<path id="path2467" class="s1" d="m626.29 31.68c1.54 2.88 1.1 6.2 1.32 9.51l0.89 0.89c9.5-15.7 29.4-8.85 45.54-10.18l0.22 29.63c-13.49 0-27.41-1.77-38.69 2.88-6.19 3.75-8.18 10.16-8.4 17.01v70.97h-38.03v-120.71z"/>
+			<path id="path2471" class="s1" d="m275.65 56.44c7.74 14.59 9.29 32.72 9.07 49.75l-1.33 0.66-78.71 0.22c-1.1 0.67-0.88 1.77-0.66 2.43 9.29 10.84 22.99 16.81 36.92 15.48 11.5-1.11 21-6.64 30.51-12.61l0.66 0.67v25.86c-7.51 7.96-18.12 10.62-27.86 13.71-25.42 4.64-51.95-1.1-68.31-22.11-12.82-16.8-16.8-42.66-9.06-63.22 5.97-17.69 23.21-35.6 42-39.13 26.31-6.86 54.17 5.31 66.77 28.29zm-41.12 1.55c-5.97-3.31-15.92-3.31-21.67 0.66-6.63 3.98-10.39 10.62-10.17 18.35 0.23 1.33 1.77 1.77 3.1 1.77h37.58l1.55-1.33c0.44-3.75-0.67-7.51-1.99-10.83-1.77-3.31-5.08-6.41-8.4-8.62z"/>
+		</g>
+	</g>
+</svg>
+        </a>
+        <nav role="navigation" class="nav-menu-box w-nav-menu">
+          <div class="nav-links">
+            <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+
+            <div
+              data-hover="false"
+              data-delay="200"
+              data-w-id="effa2a64-b986-9755-674d-3d6bdcbb7809"
+              class="nav-link-box w-dropdown"
+            >
+              <div class="nav-link w-dropdown-toggle">
+                <div>Case Studies</div>
+                <div class="dropdown-icon w-embed">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      stroke-width="1.67"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
                 </div>
               </div>
-            </nav>
+              <nav class="mega-menu-box w-dropdown-list">
+                <div class="mega-menu w-dyn-list">
+                  <div role="list" class="container container-megamenu w-dyn-items">
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="tobiko.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6900c8111bba0a5d540e0309_thumbnail.avif"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">Tobiko</p>
+                        </div>
+                        <div class="mega-item-title">
+                          How the Tobiko rebrand primed a niche data startup for rapid growth &amp; acquisition
+                        </div>
+                      </a>
+                    </div>
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="quotient-ai.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bc242d7d5d611e95cd82f5_thumbnail.avif"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">Quotient AI</p>
+                        </div>
+                        <div class="mega-item-title">
+                          Quotient AI: From rebrand to successful exit in under two months
+                        </div>
+                      </a>
+                    </div>
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="aampe.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1fd_thumbnail-aampe.webp"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">Aampe</p>
+                        </div>
+                        <div class="mega-item-title">How we made Aampe's agentic superpowers shine</div>
+                      </a>
+                    </div>
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="lumenstream.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/693051a262aaac1ca922aef0_thumbnail.jpg"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">LumenStream</p>
+                        </div>
+                        <div class="mega-item-title">
+                          Lighting the way: Building trust around an innovative business model
+                        </div>
+                      </a>
+                    </div>
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="start2coin.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd20f_thumbnail-s2c.webp"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">Start2Coin</p>
+                        </div>
+                        <div class="mega-item-title">Making cryptos easily accessible to the Everyman</div>
+                      </a>
+                    </div>
+                    <div role="listitem" class="mega-item w-dyn-item">
+                      <a href="day-by-day.html" class="mega-item-link w-inline-block">
+                        <div class="mega-img-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1ed_thumbnail-dbd.webp"
+                            alt=""
+                            class="mega-item-img"
+                          />
+                          <p class="mega-item-name">Day by Day</p>
+                        </div>
+                        <div class="mega-item-title">Unlocking growth through strategic brand development</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="#work" style="display: none" class="nav-link w-nav-link">Featured</a>
+            <a href="about.html" class="nav-link w-nav-link">About</a>
+            <a style="display: none" href="blog.html" class="nav-link w-nav-link">Blog</a>
+            <a href="contact.html" class="nav-link w-nav-link">Contact</a>
           </div>
+          <div class="nav-cta">
+            <a
+              class="button contact-navbar button-call align-start w-node-_7360f6b7-3e4e-1db3-ec50-c2b43e543df1-5c9dd0be w-button w-button"
+            >
+              Book a Call
+            </a>
+          </div>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="menu-line menu-line-top"></div>
+          <div class="menu-line menu-line-mid"></div>
+          <div class="menu-line menu-line-bottom"></div>
+        </div>
+      </div>
+      <div class="page-css w-embed">
+        <style>
+          :root {
+            --scrollbar-width: 0px;
+          }
 
-        </div>
-        <div class="nav-cta">
-          <a href="index.html#" class="button contact-navbar button-call w-button">Book a Call</a>
-        </div>
-      </nav><div class="menu-button w-nav-button"><div class="menu-line menu-line-top"></div><div class="menu-line menu-line-mid"></div><div class="menu-line menu-line-bottom"></div></div></div><div class="page-css w-embed"><style>
+          @supports (scrollbar-gutter: stable) {
+            :root {
+              --scrollbar-width: scrollbar-gutter;
+            }
+          }
+
+          @media (orientation: landscape) and (min-width: 992px) {
+            .nav-bg:after {
+              display: block;
+              content: "";
+              background-color: #4db5ff60;
+              position: absolute;
+              inset: auto 0 -1px;
+              height: 1px;
+              -webkit-mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                rgba(0, 0, 0, 0.25) 15%,
+                rgba(0, 0, 0, 0.25) 85%,
+                transparent 100%
+              );
+              mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                rgba(0, 0, 0, 0.25) 15%,
+                rgba(0, 0, 0, 0.25) 85%,
+                transparent 100%
+              );
+            }
+
+            .mega-menu:hover .mega-item-img {
+              opacity: 0.6;
+            }
+
+            .mega-item:hover .mega-item-name,
+            .mega-item:hover .mega-item-img {
+              opacity: 1;
+            }
+
+            .mega-item:hover .mega-img-box {
+              opacity: 1;
+              aspect-ratio: 3 / 2;
+            }
+
+            .mega-item .thumb-mask {
+              inset: 1rem;
+            }
+
+            .mega-item .arrow {
+              width: 3.5rem;
+              height: 3.5rem;
+            }
+
+            .mega-item:hover .arrow {
+              transform: translate(0, 0);
+            }
+
+            .mega-item-link .mega-item-title {
+              transition: color 0.2s ease-in 0.2s;
+            }
+
+            .mega-item-link:hover .mega-item-title {
+              color: var(--color--chalk);
+            }
+          }
+
+          /*@media (orientation:landscape) and (min-width:1920px) {	
+      .mega-item:hover .mega-img-box {
+        aspect-ratio: 16 / 9;
+        border-radius: var(--size--xxxs);
+      }
+    }*/
+    @media (orientation: landscape) and (min-width: 992px) {
+  .nav-link-box.w-dropdown {
+    position: static; /* so menu can size from nav container */
+  }
+
+  .nav-link-box .mega-menu-box.w-dropdown-list.w--open {
+    left: 0;
+    right: 0;
+    width: 100vw;      /* full viewport width */
+    max-width: 100vw;
+  }
+}
+        </style>
+      </div>
+    </div><div class="page-css w-embed"><style>
     :root {
       --scrollbar-width: 0px;
     }

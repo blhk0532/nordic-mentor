@@ -1006,6 +1006,99 @@
           flex-direction: column;
         }
       }
+              .about-buttons .social-icon,
+        .about-buttons .partner-img {
+          color: var(--color-white);
+        }
+
+        .about-buttons .footer-btn-box {
+          background-color: var(--color--royal-blue);
+          border-color: var(--color--royal-blue);
+        }
+
+        .about-buttons .footer-btn-box:hover {
+          background-color: var(--color--white);
+          border-color: var(--color--white);
+        }
+
+        .about-buttons .footer-btn-box:hover .social-icon,
+        .about-buttons .footer-btn-box:hover .partner-img {
+          color: var(--color--royal-blue);
+        }
+
+        .footer-flags-flex {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+        }
+
+        .footer-flags {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+
+        .footer-flex {
+          --footer-flex-gap: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: var(--footer-flex-gap);
+          flex-wrap: wrap;
+        }
+
+        .footer-flex-item {
+          margin: 12px 0;
+          padding: 0;
+          display: flex;
+          flex: 0 0 auto;
+          width: auto;
+          max-width: max-content;
+        }
+
+        .footer-flex .footer-btn-box {
+          margin: 0 !important;
+          box-sizing: border-box;
+          min-width: 0 !important;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          width: auto;
+        }
+
+        @media (max-width: 1100px) {
+          .footer-buttons {
+            grid-column: 1 / -1;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 760px) {
+          .footer-flex {
+            justify-content: center;
+          }
+
+          .block-mobile {
+            display: none;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .footer-flex {
+            gap: 10px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .footer-flags-flex {
+            flex-direction: column;
+          }
+        }
+
+        iframe {
+          margin-top: -72px;
+        }
               .modal-testimonials {
           animation: marqueeX 160s linear infinite;
         }

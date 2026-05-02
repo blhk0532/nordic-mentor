@@ -700,6 +700,99 @@
           flex-direction: column;
         }
       }
+              .about-buttons .social-icon,
+        .about-buttons .partner-img {
+          color: var(--color-white);
+        }
+
+        .about-buttons .footer-btn-box {
+          background-color: var(--color--royal-blue);
+          border-color: var(--color--royal-blue);
+        }
+
+        .about-buttons .footer-btn-box:hover {
+          background-color: var(--color--white);
+          border-color: var(--color--white);
+        }
+
+        .about-buttons .footer-btn-box:hover .social-icon,
+        .about-buttons .footer-btn-box:hover .partner-img {
+          color: var(--color--royal-blue);
+        }
+
+        .footer-flags-flex {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+        }
+
+        .footer-flags {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+
+        .footer-flex {
+          --footer-flex-gap: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: var(--footer-flex-gap);
+          flex-wrap: wrap;
+        }
+
+        .footer-flex-item {
+          margin: 12px 0;
+          padding: 0;
+          display: flex;
+          flex: 0 0 auto;
+          width: auto;
+          max-width: max-content;
+        }
+
+        .footer-flex .footer-btn-box {
+          margin: 0 !important;
+          box-sizing: border-box;
+          min-width: 0 !important;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          width: auto;
+        }
+
+        @media (max-width: 1100px) {
+          .footer-buttons {
+            grid-column: 1 / -1;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 760px) {
+          .footer-flex {
+            justify-content: center;
+          }
+
+          .block-mobile {
+            display: none;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .footer-flex {
+            gap: 10px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .footer-flags-flex {
+            flex-direction: column;
+          }
+        }
+
+        iframe {
+          margin-top: -72px;
+        }
     </style>
   </div>
   <div class="page-bg">
@@ -1026,198 +1119,277 @@
       opacity: 1;
       transform: translateX(0);
     }
-</style></div></main></div>  <footer data-w-id="dcbf104b-70a1-e436-fdd1-423371bec374" class="footer"
-    style="display:flex; justify-content: center;width:100%;position:relative;">
-    <div class="container pos-rel" style="max-width:800px;    position: unset;">
-      <div class="footer-grid" style=" padding-bottom: 2rem;">
-        <div id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374" class="footer-links"
-          style="width: 600px;padding: 2rem 2rem 4rem 4rem;margin: 0px;">
-          <a href="index.html#main" class="footer-link">HOME</a>
-          <a href="index.html#about" aria-current="page" class="footer-link w--current">ABOUT</a>
-              <a href="index.html#featured"  class="footer-link">FEATURED</a>
-          <a href="index.html#blog-image"  class="footer-link">BLOG</a>
-          <a href="privacy-policy.html" class="footer-link">PRIVACY</a>
-        </div>
-
-        <div id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374" class="footer-buttons"
-          style="margin-left:0px;width:100%;display:flex;flex-direction:column;align-items:center;gap:2rem;">
-          <div class="footer-flags"
-            style="gap: 10px;display:flex;flex-wrap:wrap;justify-content:center;width:100%;width:700px;">
-          
-
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#0052b4"
-                    d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z" />
-                  <path fill="#ffda44" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z" />
-                </g>
-              </svg>
-            </a>
-    
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#d80027"
-                    d="M0 0h133.6l32.7 20.3 34-20.3H512v222.6L491.4 256l20.6 33.4V512H200.3l-31.7-20.4-35 20.4H0V289.4l29.4-33L0 222.7z" />
-                  <path fill="#eee" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0h-66.7z" />
-                </g>
-              </svg>
-            </a>
-
-
-
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#d80027"
-                    d="M0 0h100.2l66.1 53.5L233.7 0H512v189.3L466.3 257l45.7 65.8V512H233.7l-68-50.7-65.5 50.7H0V322.8l51.4-68.5-51.4-65z" />
-                  <path fill="#eee"
-                    d="M100.2 0v189.3H0v33.4l24.6 33L0 289.5v33.4h100.2V512h33.4l30.6-26.3 36.1 26.3h33.4V322.8H512v-33.4l-24.6-33.7 24.6-33v-33.4H233.7V0h-33.4l-33.8 25.3L133.6 0z" />
-                  <path fill="#0052b4" d="M133.6 0v222.7H0v66.7h133.6V512h66.7V289.4H512v-66.7H200.3V0z" />
-                </g>
-              </svg>
-            </a>
-
-
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#eee"
-                    d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z" />
-                  <path fill="#0052b4" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z" />
-                </g>
-              </svg>
-            </a>
-
-                  
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#0052b4"
-                    d="M0 0h100.2l66.1 53.5L233.7 0H512v189.3L466.3 257l45.7 65.8V512H233.7l-68-50.7-65.5 50.7H0V322.8l51.4-68.5-51.4-65z" />
-                  <path fill="#eee"
-                    d="M100.2 0v189.3H0v33.4l24.6 33L0 289.5v33.4h100.2V512h33.4l30.6-26.3 36.1 26.3h33.4V322.8H512v-33.4l-24.6-33.7 24.6-33v-33.4H233.7V0h-33.4l-33.8 25.3L133.6 0z" />
-                  <path fill="#d80027" d="M133.6 0v222.7H0v66.7h133.6V512h66.7V289.4H512v-66.7H200.3V0z" />
-                </g>
-              </svg>
-            </a>
-
-
-       <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-width: 48px; min-height: 42px; display: flex; justify-content: center;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <svg style="width: 28px; height: 28px; margin: 6px; position: absolute;"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <mask id="a">
-                  <circle cx="256" cy="256" r="256" fill="#fff" />
-                </mask>
-                <g mask="url(#a)">
-                  <path fill="#d80027" d="M0 0h512v89l-79.2 163.7L512 423v89H0v-89l82.7-169.6L0 89z" />
-                  <path fill="#eee" d="M0 89h512v78l-42.6 91.2L512 345v78H0v-78l40-92.5L0 167z" />
-                  <path fill="#0052b4" d="M0 167h512v178H0z" />
-                </g>
-              </svg>
-            </a>
-
-
-          </div>
-
-
-          <div id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374" class="footer-buttons-links"
-            style="gap: 1rem;margin-left: 0px; padding-bottom: 2rem; width: 100%; display: flex; justify-content: center;">
-
-            <style>
-              .footer-btn-box:hover {
-                border-color: transparent;
-                background-color: #18181b;
-                color: #445066;
-              }
-            </style>
-
-            <a id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-              style="min-height: 42px;min-width: 150px;position: relative;padding: 12px;"
-              href="https://nordicdigitalthailand.com/" target="_blank"
-              class="footer-btn-box btn-social w-inline-block">
-              <img style="height: 40px; width: 128px; position: relative; top: -12px;padding:6px" src="https://nordicdigitalthailand.com/icons/magent.svg"
-                loading="lazy" alt="nordicdigitalthailand.com logo, white option, svg icon" class="logo-icon" />
-
-            </a>
-
-            <div style="width: 260px;height: 42px;" id="w-node-_63f43c47-0e2c-2d30-a7a7-2641987f81d9-0a5b5fdc"
-              class="webflow-badge">
-              <a href="index.html" class="brand w-nav-brand">
-                <img style="height: 48px;width:48px;position:absolute;left:-12px;top:1px;" src="https://nordicdigitalthailand.com/icons/bolt.svg"
-                  loading="lazy" alt="nordicdigitalthailand.com logo, white option, svg icon" class="logo-icon" />
-                <img style="width: 242px; height: 48px; position: relative; bottom: 2px; left: -12px;"
-                  src="https://nordicdigitalthailand.com/icons/logotype.svg" loading="eager" alt="nordicdigitalthailand.com Logo" class="logo-img" />
-              </a>
+</style></div></main></div>  <footer data-w-id="dcbf104b-70a1-e436-fdd1-423371bec374" class="footer" style="padding: 2rem">
+      <div class="container pos-rel">
+        <div class="footer-grid">
+          <div id="w-node-_838794ff-e1c2-a27d-3312-9057e764b090-71bec374" class="brand brand-footer">
+            <img
+              src="icons/ssl.webp"
+              style="width: 48px"
+              loading="lazy"
+              alt="NordicDigitalThailand.com logo, white option, svg icon"
+              class="logo-footer"
+            />
+            <img
+              src="icons/ny.svg"
+              style="width: 64px"
+              loading="lazy"
+              alt="NordicDigitalThailand.com logo, white option, svg icon"
+              class="logo-footer"
+            />
+            <div
+              id="w-node-dcbf104b-70a1-e436-fdd1-423371bec379-71bec374"
+              class="footer-copy"
+              style="white-space: nowrap; text-overflow: clip"
+            >
+              ©
+              <span class="current-year">2026</span>
+              Nordic Digital Marketing
+              <span class="block-mobile">Co., Ltd. All rights reserved.</span>
             </div>
-
           </div>
-
           <div
-            style="contain-intrinsic-block-size: auto 100px;font-size: 0.5rem;width: 666px;bottom: 0px;left: 0px;justify-content: center;padding-bottom: 1rem; letter-spacing: 1px;"
-            id="w-node-_838794ff-e1c2-a27d-3312-9057e764b090-71bec374" class="brand brand-footer">
-            <div id="w-node-dcbf104b-70a1-e436-fdd1-423371bec379-71bec374" class="footer-copy">© <span
-                class="current-year">YEAR</span>
-              บริษัท นอร์ดิก ดิจิทัล มาร์เก็ตติ้ง จำกัด. Nordic Digital Marketing Co Ltd. <span class="block-mobile">All
-                rights reserved.</span>
+            id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374"
+            class="footer-links"
+            style="padding: 2rem; width: 100%; margin-left: 0px"
+          >
+            <a href="#main" class="footer-link">HOME</a>
+            <a href="about.html" aria-current="page" class="footer-link w--current">ABOUT</a>
+            <a href="blog.html" class="footer-link">BLOG</a>
+            <a href="privacy-policy.html" class="footer-link">PRIVACY</a>
+            <a href="contact.html" class="footer-link">CONTACT</a>
+          </div>
+          <div style="margin: 0px" id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374" class="footer-buttons">
+            <div class="footer-flex" style="justify-self: unset; justify-content: center">
+              <div class="footer-flex-item">
+                <a
+                  id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
+                  href="index.html"
+                  class="footer-btn-box w-inline-block footer-btn-link"
+                  style="max-width: 180px; padding: 0px 10px 0px 10px; max-height: 36px; min-height: 36px"
+                >
+                  <img
+                    style="height: 36px; margin-left: 24px; width: 36px"
+                    src="https://nordicdigitalthailand.com/icons/bolt.svg"
+                    loading="lazy"
+                    alt="nordicdigitalthailand.com logo, white option, svg icon"
+                    class="logo-icon"
+                  />
+                  <img
+                    style="width: 140px; height: 32px; position: relative; left: -28px; top: -1px"
+                    src="https://nordicdigitalthailand.com/icons/logotype.svg"
+                    loading="eager"
+                    alt="nordicdigitalthailand.com Logo"
+                    class="logo-img"
+                  />
+                </a>
+              </div>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="
+                    max-width: 180px;
+                    min-width: 128px;
+                    padding: 0px 20px 0px 20px;
+                    min-height: 36px;
+                    max-height: 36px;
+                  "
+                  href="about.html"
+                  class="footer-btn-box btn-social w-inline-block footer-btn-link"
+                >
+                  <img
+                    style="height: 16px"
+                    src="https://nordicdigitalthailand.com/icons/magent.svg"
+                    loading="lazy"
+                    alt="nordicdigitalthailand.com logo, white option, svg icon"
+                    class="logo-mentor"
+                  />
+                </a>
+              </div>
+              <div
+                class="footer-flex-item footer-flags"
+                style="gap: 10px; display: flex; flex-wrap: wrap; justify-content: center; width: 100%; width: 700px"
+              >
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <mask id="a">
+                      <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                    </mask>
+                    <g mask="url(#a)">
+                      <path
+                        fill="#0052b4"
+                        d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z"
+                      ></path>
+                      <path fill="#ffda44" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <mask id="a">
+                      <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                    </mask>
+                    <g mask="url(#a)">
+                      <path
+                        fill="#d80027"
+                        d="M0 0h133.6l32.7 20.3 34-20.3H512v222.6L491.4 256l20.6 33.4V512H200.3l-31.7-20.4-35 20.4H0V289.4l29.4-33L0 222.7z"
+                      ></path>
+                      <path fill="#eee" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0h-66.7z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <mask id="a">
+                      <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                    </mask>
+                    <g mask="url(#a)">
+                      <path
+                        fill="#d80027"
+                        d="M0 0h100.2l66.1 53.5L233.7 0H512v189.3L466.3 257l45.7 65.8V512H233.7l-68-50.7-65.5 50.7H0V322.8l51.4-68.5-51.4-65z"
+                      ></path>
+                      <path
+                        fill="#eee"
+                        d="M100.2 0v189.3H0v33.4l24.6 33L0 289.5v33.4h100.2V512h33.4l30.6-26.3 36.1 26.3h33.4V322.8H512v-33.4l-24.6-33.7 24.6-33v-33.4H233.7V0h-33.4l-33.8 25.3L133.6 0z"
+                      ></path>
+                      <path fill="#0052b4" d="M133.6 0v222.7H0v66.7h133.6V512h66.7V289.4H512v-66.7H200.3V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <mask id="a">
+                      <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                    </mask>
+                    <g mask="url(#a)">
+                      <path
+                        fill="#eee"
+                        d="M0 0h133.6l35.3 16.7L200.3 0H512v222.6l-22.6 31.7 22.6 35.1V512H200.3l-32-19.8-34.7 19.8H0V289.4l22.1-33.3L0 222.6z"
+                      ></path>
+                      <path fill="#0052b4" d="M133.6 0v222.6H0v66.8h133.6V512h66.7V289.4H512v-66.8H200.3V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <mask id="a">
+                      <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                    </mask>
+                    <g mask="url(#a)">
+                      <path fill="#d80027" d="M0 0h512v89l-79.2 163.7L512 423v89H0v-89l82.7-169.6L0 89z"></path>
+                      <path fill="#eee" d="M0 89h512v78l-42.6 91.2L512 345v78H0v-78l40-92.5L0 167z"></path>
+                      <path fill="#0052b4" d="M0 167h512v178H0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
+                  style="width: 36px !important; height: 36px; display: flex; justify-content: center;padding:2px;"
+                  href="index.html"
+                  class="footer-btn-flag footer-btn-box btn-social w-inline-block"
+                >
+                  <svg
+                    style="width: 18px; height: 18px; margin: 6px; position: absolute"
+                    height="18px"
+                    width="18px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <circle style="fill: #f0f0f0" cx="256" cy="256" r="256"></circle>
+                    <g>
+                      <path
+                        style="fill: #d80027"
+                        d="M244.87,256H512c0-23.106-3.08-45.49-8.819-66.783H244.87V256z"
+                      ></path>
+                      <path
+                        style="fill: #d80027"
+                        d="M244.87,122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783H244.87V122.435z"
+                      ></path>
+                      <path
+                        style="fill: #d80027"
+                        d="M256,512c60.249,0,115.626-20.824,159.356-55.652H96.644C140.374,491.176,195.751,512,256,512z"
+                      ></path>
+                      <path
+                        style="fill: #d80027"
+                        d="M37.574,389.565h436.852c12.581-20.529,22.338-42.969,28.755-66.783H8.819   C15.236,346.596,24.993,369.036,37.574,389.565z"
+                      ></path>
+                    </g>
+                    <path
+                      style="fill: #0052b4"
+                      d="M118.584,39.978h23.329l-21.7,15.765l8.289,25.509l-21.699-15.765L85.104,81.252l7.16-22.037  C73.158,75.13,56.412,93.776,42.612,114.552h7.475l-13.813,10.035c-2.152,3.59-4.216,7.237-6.194,10.938l6.596,20.301l-12.306-8.941  c-3.059,6.481-5.857,13.108-8.372,19.873l7.267,22.368h26.822l-21.7,15.765l8.289,25.509l-21.699-15.765l-12.998,9.444  C0.678,234.537,0,245.189,0,256h256c0-141.384,0-158.052,0-256C205.428,0,158.285,14.67,118.584,39.978z M128.502,230.4  l-21.699-15.765L85.104,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822l-21.7,15.765L128.502,230.4z   M120.213,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822  L120.213,130.317z M220.328,230.4l-21.699-15.765L176.93,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822  l-21.7,15.765L220.328,230.4z M212.039,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822  l8.288-25.509l8.288,25.509h26.822L212.039,130.317z M212.039,55.743l8.289,25.509l-21.699-15.765L176.93,81.252l8.289-25.509  l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822L212.039,55.743z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
+          <img
+            src="icons/m1.svg"
+            style="opacity: 0.02"
+            alt="NordicDigitalThailand.com"
+            id="w-node-_005693a7-642d-49ee-eb26-93d37216133f-71bec374"
+            class="footer-logotype"
+          />
         </div>
-
-
-        <img style="width: 1080px; opacity: 0.1;padding-bottom:32px;padding-right: 18px;    bottom: -50px;" src="https://nordicdigitalthailand.com/icons/mentor.svg"
-          alt="nordicdigitalthailand.com" id="w-node-_005693a7-642d-49ee-eb26-93d37216133f-71bec374" class="footer-logotype" />
-
+        <div class="hide w-embed w-script">
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const yrSpan = document.querySelector(".current-year");
+              const currentYr = new Date().getFullYear();
+              yrSpan.textContent = currentYr;
+            });
+          </script>
+        </div>
       </div>
-      <div class="hide w-embed w-script">
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const yrSpan = document.querySelector('.current-year');
-            const currentYr = new Date().getFullYear();
-            yrSpan.textContent = currentYr;
-          });
-        </script>
-      </div>
-  </footer><div class="popup popup-gdpr"><p><span class="text-large text-light">Hello there! Our site uses web cookies to <br/>optimize your online experience.</span></p><div class="button-group full-width margin-top margin-xxs"><a href="day-by-day.html#" data-w-id="d5eac6a6-ea2a-ceb6-b3f2-44561c9fea40" class="button gdpr w-button">Sounds Good</a><a href="https://nordicdigitalthailand.com/privacy-policy.html#cookies" target="_blank" class="button secondary w-button">Cookie Policy</a></div></div><div class="modal-wrapper modal-call"><div class="page-bg"><div class="bg-gradient"></div><div class="page-grid-box"><div class="container flex"><div class="grid-box"><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div></div></div></div></div><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6750141970e01af85c9dd105_close.svg" loading="lazy" data-w-id="19979228-c003-f9a6-d0dc-2c91d1d5dde7" alt="Close modal" class="modal-close"/><div class="container container-nav"><div class="brand brand-modal"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/697c92fceaa40b139db97fc7_logo-symbol.svg" loading="eager" alt="ndsth.com" class="logo-img"/></div></div><div class="modal-content content-contact"><div class="modals-testimonials-mask"><div reveal="fade" class="glow-bg bg-bottom"></div><div class="modal-testimonials-box"><div class="modal-testimonials w-dyn-list"><div role="list" class="modal-testimonials-list w-dyn-items"><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn transformed a site that confused visitors into one that clearly communicated our value. The build was flawless, and we received M&amp;A interest shortly after the launch.</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bd700e1be78e2529a0d72f_JuliaN-ezgif.com-crop.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Julia Neagu</p><p class="testimonial-role">CEO and Founder, Quotient AI</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his team translated what we do into a genuine masterpiece!</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69138d952ec6663a0e7bd81f_Stephanie.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Stephanie McNeil</p><p class="testimonial-role">Marketing Manager, LumenStream</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to build a cohesive brand system and website for our technical product. </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/690cd267a9f47319e5cadca3_Carol.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Carol Lu-Vernooij</p><p class="testimonial-role">Head of Marketing, Tobiko Data</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The website turned out amazing, and we&#x27;ve seen a significant boost in leads. If you&#x27;re looking for a dynamic way to showcase your product, look no further! </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1be_jim.webp" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Jim Laurain</p><p class="testimonial-role">Head of Growth at Aampe</p></div></div></div></div></div></div><div class="modal-testimonials w-dyn-list"><div role="list" class="modal-testimonials-list w-dyn-items"><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn transformed a site that confused visitors into one that clearly communicated our value. The build was flawless, and we received M&amp;A interest shortly after the launch.</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bd700e1be78e2529a0d72f_JuliaN-ezgif.com-crop.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Julia Neagu</p><p class="testimonial-role">CEO and Founder, Quotient AI</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his team translated what we do into a genuine masterpiece!</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69138d952ec6663a0e7bd81f_Stephanie.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Stephanie McNeil</p><p class="testimonial-role">Marketing Manager, LumenStream</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to build a cohesive brand system and website for our technical product. </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/690cd267a9f47319e5cadca3_Carol.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Carol Lu-Vernooij</p><p class="testimonial-role">Head of Marketing, Tobiko Data</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The website turned out amazing, and we&#x27;ve seen a significant boost in leads. If you&#x27;re looking for a dynamic way to showcase your product, look no further! </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1be_jim.webp" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Jim Laurain</p><p class="testimonial-role">Head of Growth at Aampe</p></div></div></div></div></div></div></div></div><div class="container container-testimonial"><div id="w-node-_5a950fae-b81e-6693-c7a1-91aeafdcd16d-d1d5dde6" class="calendly-box"><div class="calendly-container w-embed w-script"><!-- Calendly inline widget begin -->
+    </footer><div class="popup popup-gdpr"><p><span class="text-large text-light">Hello there! Our site uses web cookies to <br/>optimize your online experience.</span></p><div class="button-group full-width margin-top margin-xxs"><a href="day-by-day.html#" data-w-id="d5eac6a6-ea2a-ceb6-b3f2-44561c9fea40" class="button gdpr w-button">Sounds Good</a><a href="https://nordicdigitalthailand.com/privacy-policy.html#cookies" target="_blank" class="button secondary w-button">Cookie Policy</a></div></div><div class="modal-wrapper modal-call"><div class="page-bg"><div class="bg-gradient"></div><div class="page-grid-box"><div class="container flex"><div class="grid-box"><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div><div class="grid-line"><div class="grid-line-inner"></div></div></div></div></div></div><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/6750141970e01af85c9dd105_close.svg" loading="lazy" data-w-id="19979228-c003-f9a6-d0dc-2c91d1d5dde7" alt="Close modal" class="modal-close"/><div class="container container-nav"><div class="brand brand-modal"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0ab/697c92fceaa40b139db97fc7_logo-symbol.svg" loading="eager" alt="ndsth.com" class="logo-img"/></div></div><div class="modal-content content-contact"><div class="modals-testimonials-mask"><div reveal="fade" class="glow-bg bg-bottom"></div><div class="modal-testimonials-box"><div class="modal-testimonials w-dyn-list"><div role="list" class="modal-testimonials-list w-dyn-items"><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn transformed a site that confused visitors into one that clearly communicated our value. The build was flawless, and we received M&amp;A interest shortly after the launch.</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bd700e1be78e2529a0d72f_JuliaN-ezgif.com-crop.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Julia Neagu</p><p class="testimonial-role">CEO and Founder, Quotient AI</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his team translated what we do into a genuine masterpiece!</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69138d952ec6663a0e7bd81f_Stephanie.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Stephanie McNeil</p><p class="testimonial-role">Marketing Manager, LumenStream</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to build a cohesive brand system and website for our technical product. </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/690cd267a9f47319e5cadca3_Carol.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Carol Lu-Vernooij</p><p class="testimonial-role">Head of Marketing, Tobiko Data</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The website turned out amazing, and we&#x27;ve seen a significant boost in leads. If you&#x27;re looking for a dynamic way to showcase your product, look no further! </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1be_jim.webp" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Jim Laurain</p><p class="testimonial-role">Head of Growth at Aampe</p></div></div></div></div></div></div><div class="modal-testimonials w-dyn-list"><div role="list" class="modal-testimonials-list w-dyn-items"><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn transformed a site that confused visitors into one that clearly communicated our value. The build was flawless, and we received M&amp;A interest shortly after the launch.</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69bd700e1be78e2529a0d72f_JuliaN-ezgif.com-crop.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Julia Neagu</p><p class="testimonial-role">CEO and Founder, Quotient AI</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The rebrand and new website are incredibly impactful and truly reflect who we are. Bjorn and his team translated what we do into a genuine masterpiece!</p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/69138d952ec6663a0e7bd81f_Stephanie.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Stephanie McNeil</p><p class="testimonial-role">Marketing Manager, LumenStream</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">Bjorn had a clear vision, and was extremely proactive from day one, going above and beyond to build a cohesive brand system and website for our technical product. </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/690cd267a9f47319e5cadca3_Carol.avif" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Carol Lu-Vernooij</p><p class="testimonial-role">Head of Marketing, Tobiko Data</p></div></div></div></div><div role="listitem" class="modal-testimonial w-dyn-item"><div class="testimonial-content modal-testimonial-content"><p class="testimonial-quote modal-testimonial-quote">The website turned out amazing, and we&#x27;ve seen a significant boost in leads. If you&#x27;re looking for a dynamic way to showcase your product, look no further! </p><div class="flex mid-aligned gap-xs"><img src="https://cdn.prod.website-files.com/6750141970e01af85c9dd0d4/6750141970e01af85c9dd1be_jim.webp" loading="lazy" alt="" class="testimonial-pic pic-smaller"/><div class="flex vertical text-smaller"><p class="testimonial-author">Jim Laurain</p><p class="testimonial-role">Head of Growth at Aampe</p></div></div></div></div></div></div></div></div><div class="container container-testimonial"><div id="w-node-_5a950fae-b81e-6693-c7a1-91aeafdcd16d-d1d5dde6" class="calendly-box"><div class="calendly-container w-embed w-script"><!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-resize="true" data-url="https://calendly.com/Bjorn/discovery?hide_gdpr_banner=1" style="width:100%;max-height:90vh;height:90vh;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end --></div></div></div><div class="plane-box events-off"><div class="plane"><div class="base"></div><div class="wings"></div></div></div></div><div class="page-css w-embed"><style>
