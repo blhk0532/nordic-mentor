@@ -916,6 +916,15 @@
             display: flex;
             justify-content: center;
           }
+
+          .brand.brand-footer {
+            display: none !important;
+          }
+        }
+
+        .footer-copy {
+          font-weight: 400;
+          font-size: 14px;
         }
 
         .footer-flags-flex {
@@ -964,8 +973,11 @@
           max-width: 555px;
           display: flex;
           justify-content: center;
+          padding-top: 1rem;
+          padding-bottom: 01em;
           gap: 10px;
           flex-wrap: wrap;
+          min-width: 500px;
         }
         .footer-flex-root {
           justify-self: unset;
@@ -1068,27 +1080,25 @@
           }
 
           .footer-btn-flag svg {
-            width: 16px !important;
+            min-width: 32px !important;
             height: 16px !important;
             margin: 4px !important;
           }
 
           .footer-flex-root {
-            justify-self: unset;
-            display: grid;
             width: 100%;
             justify-content: center;
           }
           .footer-buttons {
-         margin-top: 5rem!important;
+            margin-top: 2rem !important;
           }
           .nordic-button {
             position: relative;
-            left: 5px!important;
+            left: 5px !important;
           }
           .mentor-button {
-            position: relative!important;
-             left: 5px!important;
+            position: relative !important;
+            left: 5px !important;
             min-width: 178px !important;
           }
 
@@ -1097,21 +1107,36 @@
             left: 0px;
             top: 0px;
           }
-
-          .footer-copy {
-     position: relative;
-  top: 26px;
-  white-space: nowrap;
-  text-overflow: clip;
-  font-size: 8px;
-  margin: 0px;
-  padding: 0px;
+          .brand.brand-footer {
+            display: none !important;
           }
 
-.section.section-hero{
-  padding-bottom:4rem;
-}
+          .footer-copy {
+            position: relative;
+            top: 26px;
+            white-space: nowrap;
+            text-overflow: clip;
+            font-size: 8px;
+            margin: 0px;
+            padding: 0px;
+          }
 
+          .section.section-hero {
+            padding-bottom: 4rem;
+          }
+        }
+        .footer-nav-links {
+          padding: 2rem;
+          width: 100%;
+          margin-left: 0px;
+          max-width: 420px;
+          display: flex;
+          justify-content: center;
+          padding-top: 1rem;
+          padding-bottom: 01em;
+          gap: 10px;
+          flex-wrap: wrap;
+          min-width: 400px;
         }
 
         iframe {
@@ -5579,24 +5604,13 @@
             id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374"
             class="footer-links footer-nav-links"
           >
-            <a
-              href="#main"
-              aria-current="page"
-              class="footer-link w--current"
+            <a href="#main" aria-current="page" class="footer-link w--current"
               >HOME</a
             >
-            <a href="about.html" class="footer-link"
-              >ABOUT</a
-            >
+            <a href="about.html" class="footer-link">ABOUT</a>
             <a style="margin: 5px" href="blog.html" class="footer-link">BLOG</a>
-            <a
-              href="privacy-policy.html"
-              class="footer-link"
-              >PRIVACY</a
-            >
-            <a href="contact.html" class="footer-link"
-              >CONTACT</a
-            >
+            <a href="privacy-policy.html" class="footer-link">PRIVACY</a>
+            <a href="contact.html" class="footer-link">CONTACT</a>
           </div>
           <div
             id="w-node-db56488f-1900-4a24-3a7d-59e15e001d5f-71bec374"
@@ -5605,58 +5619,28 @@
             <div class="footer-flex footer-flex-root">
               <div class="footer-flex-item footer-logo-btn">
                 <a
-                  id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
-                  href="index.html"
-                  class="footer-btn-box w-inline-block footer-btn-link nordic-button"
+                  id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    max-width: 180px;
-                    padding: 0px 10px 0px 10px;
-                    max-height: 36px;
+                    max-width: 100px;
+                    min-width: 100px;
+                    padding: 0px 20px 0px 20px;
                     min-height: 36px;
+                    max-height: 36px;
                   "
+                  href="about.html"
+                  class="footer-btn-box btn-social w-inline-block footer-btn-link mentor-button"
                 >
                   <img
-                    style="height: 36px; margin-left: 24px; width: 36px"
-                    src="https://nordicdigitalthailand.com/icons/bolt.svg"
+                    style="height: 16px"
+                    src="https://nordicdigitalthailand.com/icons/m30.svg"
                     loading="lazy"
                     alt="nordicdigitalthailand.com logo, white option, svg icon"
-                    class="logo-icon"
-                  />
-                  <img
-                    style="
-                      width: 140px;
-                      height: 32px;
-                      position: relative;
-                      left: -28px;
-                      top: -1px;
-                    "
-                    src="https://nordicdigitalthailand.com/icons/logotype.svg"
-                    loading="eager"
-                    alt="nordicdigitalthailand.com Logo"
-                    class="logo-img"
+                    class="logo-mentor"
                   />
                 </a>
               </div>
-              <a
-                id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
-                style="
-                  max-width: 180px;
-                  min-width: 128px;
-                  padding: 0px 20px 0px 20px;
-                  min-height: 36px;
-                  max-height: 36px;
-                "
-                href="about.html"
-                class="footer-btn-box btn-social w-inline-block footer-btn-link mentor-button"
-              >
-                <img
-                  style="height: 16px"
-                  src="https://nordicdigitalthailand.com/icons/magent.svg"
-                  loading="lazy"
-                  alt="nordicdigitalthailand.com logo, white option, svg icon"
-                  class="logo-mentor"
-                />
-              </a>
+
+       
               <div
                 class="footer-flex-item footer-flags"
                 style="
@@ -5669,7 +5653,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5706,7 +5690,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5743,7 +5727,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5784,7 +5768,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5821,7 +5805,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5859,7 +5843,7 @@
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
-                    width: 36px !important;
+                    min-width: 36px !important;
                     height: 36px;
                     display: flex;
                     justify-content: center;
@@ -5915,6 +5899,43 @@
                   </svg>
                 </a>
               </div>
+
+       <div class="footer-flex-item footer-logo-btn">
+                <a
+                  id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
+                  href="index.html"
+                  class="footer-btn-box w-inline-block footer-btn-link nordic-button"
+                  style="
+                    max-width: 180px;
+                    padding: 0px 10px 0px 10px;
+                    max-height: 36px;
+                    min-height: 36px;
+                  "
+                >
+                  <img
+                    style="height: 36px; margin-left: 24px; width: 36px"
+                    src="https://nordicdigitalthailand.com/icons/bolt.svg"
+                    loading="lazy"
+                    alt="nordicdigitalthailand.com logo, white option, svg icon"
+                    class="logo-icon"
+                  />
+                  <img
+                    style="
+                      width: 140px;
+                      height: 32px;
+                      position: relative;
+                      left: -28px;
+                      top: -1px;
+                    "
+                    src="https://nordicdigitalthailand.com/icons/logotype.svg"
+                    loading="eager"
+                    alt="nordicdigitalthailand.com Logo"
+                    class="logo-img"
+                  />
+                </a>
+              </div>
+
+
             </div>
           </div>
           <img
