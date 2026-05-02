@@ -830,7 +830,7 @@
         }
 
         .footer-buttons {
-          margin: 0 !important;
+          margin: 0;
         }
 
         .footer-flex {
@@ -876,7 +876,7 @@
           }
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: 990px) {
           .footer-links {
             width: 100% !important;
             max-width: 100%;
@@ -1084,11 +1084,11 @@
           }
           .nordic-button {
             position: relative;
-            left: 1rem;
+            left: 5px!important;
           }
           .mentor-button {
             position: relative!important;
-            left: 1rem!important;
+             left: 5px!important;
             min-width: 178px !important;
           }
 
@@ -1100,8 +1100,17 @@
 
           .footer-copy {
      position: relative;
-  top: 24px;
+  top: 26px;
+  white-space: nowrap;
+  text-overflow: clip;
+  font-size: 8px;
+  margin: 0px;
+  padding: 0px;
           }
+
+.section.section-hero{
+  padding-bottom:4rem;
+}
 
         }
 
@@ -5571,23 +5580,21 @@
             class="footer-links footer-nav-links"
           >
             <a
-              style="margin: 5px"
               href="#main"
               aria-current="page"
               class="footer-link w--current"
               >HOME</a
             >
-            <a style="margin: 5px" href="about.html" class="footer-link"
+            <a href="about.html" class="footer-link"
               >ABOUT</a
             >
             <a style="margin: 5px" href="blog.html" class="footer-link">BLOG</a>
             <a
-              style="margin: 5px"
               href="privacy-policy.html"
               class="footer-link"
               >PRIVACY</a
             >
-            <a style="margin: 5px" href="contact.html" class="footer-link"
+            <a href="contact.html" class="footer-link"
               >CONTACT</a
             >
           </div>
