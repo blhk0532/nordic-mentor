@@ -864,6 +864,16 @@
           }
         }
 
+        @media (max-width: 480px) {
+          .footer-flex {
+            flex-direction: column;
+            gap: 12px !important;
+          }
+          .footer-flex-item {
+            margin: 0;
+          }
+        }
+
         @media (max-width: 768px) {
           .footer-flags-flex {
             flex-direction: column;
@@ -4665,6 +4675,9 @@
               .footer-logo {
                 bottom: 2rem;
               }
+              .footer-link{
+                padding:5px;
+              }
             </style>
           </div>
         </section>
@@ -4704,8 +4717,8 @@
             class="footer-links"
             style="padding: 2rem; width: 100%; margin-left: 0px"
           >
-            <a href="#main" class="footer-link">HOME</a>
-            <a href="about.html" aria-current="page" class="footer-link w--current">ABOUT</a>
+            <a href="#main" aria-current="page"  class="footer-link  w--current">HOME</a>
+            <a href="about.html" class="footer-link">ABOUT</a>
             <a href="blog.html" class="footer-link">BLOG</a>
             <a href="privacy-policy.html" class="footer-link">PRIVACY</a>
             <a href="contact.html" class="footer-link">CONTACT</a>
