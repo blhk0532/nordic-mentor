@@ -829,6 +829,52 @@
           padding: 5px;
         }
 
+        .footer-grid {
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        .footer-links.footer-nav-links {
+          order: 1;
+        }
+
+        .footer-buttons {
+          order: 2;
+        }
+
+        .footer-logotype {
+          order: 3;
+        }
+
+        .brand.brand-footer {
+          order: 4;
+          display: flex !important;
+        }
+
+.brand-footer-inner{
+  display:inline-flex!important;
+}
+.brand-footer{
+  justify-content: center!important;
+  width: 100%!important;
+  position: relative!important;
+  top: 1rem!important;
+}
+.logo-footer{
+  height:48px;
+  width:auto!important;
+  padding-right:1rem!important;
+}
+
+
+.menu-button.w-nav-button{
+position: relative;
+  top: 5px;
+  right: 5px;
+}
+
         .footer-buttons {
           margin: 0;
         }
@@ -917,9 +963,6 @@
             justify-content: center;
           }
 
-          .brand.brand-footer {
-            display: none !important;
-          }
         }
 
         .footer-copy {
@@ -992,6 +1035,13 @@
             grid-column: 1 / -1;
             width: 100%;
           }
+
+          .section-hero {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+          }
+
+
         }
 
         @media (max-width: 760px) {
@@ -1065,6 +1115,24 @@
         }
 
         @media (max-width: 600px) {
+          .footer-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .footer-flex-item.mentor-wrap {
+            order: 1;
+          }
+
+          .footer-flex-item.footer-flags {
+            order: 2;
+          }
+
+          .footer-flex-item.nordic-wrap {
+            order: 3;
+          }
+
           .footer-flags-flex {
             gap: 8px;
           }
@@ -1090,7 +1158,7 @@
             justify-content: center;
           }
           .footer-buttons {
-            margin-top: 2rem !important;
+            margin-top: 4rem !important;
           }
           .nordic-button {
             position: relative;
@@ -1107,10 +1175,7 @@
             left: 0px;
             top: 0px;
           }
-          .brand.brand-footer {
-            display: none !important;
-          }
-
+  
           .footer-copy {
             position: relative;
             top: 26px;
@@ -1121,11 +1186,7 @@
             padding: 0px;
           }
 
-          .section.section-hero {
-            padding-bottom: 4rem;
-          }
-        }
-        .footer-nav-links {
+                  .footer-nav-links {
           padding: 2rem;
           width: 100%;
           margin-left: 0px;
@@ -1138,6 +1199,19 @@
           flex-wrap: wrap;
           min-width: 400px;
         }
+
+          .section.section-hero {
+            padding-bottom: 4rem;
+          }
+.footer-links.footer-nav-links,
+.footer-nav-links {
+          max-width: 84vw !important;
+          width:84vw !important;
+  min-width: 84vw !important;
+  padding-top: 0rem !important;
+        }
+  }
+
 
         iframe {
           margin-top: -72px;
@@ -5571,10 +5645,14 @@
     >
       <div class="container pos-rel">
         <div class="footer-grid">
+         
           <div
             id="w-node-_838794ff-e1c2-a27d-3312-9057e764b090-71bec374"
             class="brand brand-footer"
           >
+
+<div class="brand-footer-inner">
+
             <img
               src="icons/ssl.webp"
               style="width: 48px"
@@ -5598,7 +5676,11 @@
               <span class="current-year">2026</span>
               Nordic Digital Marketing
               <span class="block-mobile">Co., Ltd. All rights reserved.</span>
+
             </div>
+
+            </div>
+
           </div>
           <div
             id="w-node-dcbf104b-70a1-e436-fdd1-423371bec37e-71bec374"
@@ -5617,7 +5699,7 @@
             class="footer-buttons"
           >
             <div class="footer-flex footer-flex-root">
-              <div class="footer-flex-item footer-logo-btn">
+              <div class="footer-flex-item footer-logo-btn mentor-wrap">
                 <a
                   id="w-node-b9f23da3-ed25-dc98-9845-10973eaa9128-71bec374"
                   style="
@@ -5900,7 +5982,7 @@
                 </a>
               </div>
 
-       <div class="footer-flex-item footer-logo-btn">
+      <div class="footer-flex-item footer-logo-btn nordic-wrap">
                 <a
                   id="w-node-d9268e09-4f90-7ed8-0f68-03f3054d00bc-71bec374"
                   href="index.html"
